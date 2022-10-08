@@ -1,0 +1,224 @@
+.text-align-center {
+  text-align: center;
+}
+
+.data-subscription-head {
+  /* H3 | Subtitle */
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  text-align: center;
+
+  /* Text 1 */
+
+  color: #011312;
+}
+
+.main-table {
+  width: 1136px;
+  border-collapse: collapse;
+  margin: 72px auto 72px;
+  box-shadow: 0px 8px 24px -4px rgba(51, 51, 51, 0.08);
+  border-radius: 0px;
+}
+
+tr:nth-of-type(even) {
+  background: #f8f9f8;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background-color: #fff;
+}
+.sub-head th {
+  background-color: #fff;
+  color: #3e4b4b;
+}
+
+th {
+  background: #718380;
+  color: white;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "rclt" off;
+  padding: 8px 12px;
+  color: #ffffff;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:before {
+  content: attr(data-th);
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
+  color: #000;
+}
+.first-col {
+  width: 568px;
+}
+.w-50 {
+  width: 568px;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.float-r {
+  float: left;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+@media screen and (max-width: 1140px) {
+  .main-table {
+    width: 690px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .first-col {
+    width: 351px;
+  }
+  .w-50 {
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .main-table {
+    width: inherit;
+  }
+  .w-50 {
+    width: 145px;
+  }
+  .first-col {
+    width: auto;
+  }
+
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+  .float-r {
+    float: right;
+  }
+  .display-none {
+    display: none;
+  }
+  .first-col {
+    min-width: 290px;
+  }
+  td {
+    /* H6 | Body 1 */
+
+    font-family: "M PLUS 1";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    /* text 2 */
+
+    color: #3e4b4b;
+  }
+
+  .sub-head th {
+    display: none;
+  }
+  td {
+    padding: 8px 12px;
+  }
+}
+.m-143 {
+  padding-bottom: 88px;
+}
+
+@media screen and (min-width: 600px) {
+  .rwd-table td:before {
+    display: none;
+  }
+
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+td,
+th {
+  text-align: left;
+  font-size: 18px;
+}
+
+td {
+  /* H6 | Body 1 */
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 16px 12px;
+  vertical-align: middle;
+  align-items: center;
+  color: #3e4b4b;
+}
+
+.subscribe-btn {
+  float: right;
+  border: 1px solid #3e4b4b;
+  font-family: "IBM Plex Mono";
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  padding: 8px 26px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #3e4b4b;
+}
+
+.subscribe-btn:hover {
+  border: #008f7d;
+  background-color: #008f7d;
+  color: #fff;
+}
+
+@media screen and (max-width: 1149px) {
+  table {
+    width: 690px;
+  }
+  .last-th {
+    width: 345px;
+  }
+}

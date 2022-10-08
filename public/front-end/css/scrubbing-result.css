@@ -1,0 +1,215 @@
+.main-background {
+  background: #00443b33;
+}
+
+.m-120 {
+  padding-top: 120px;
+}
+
+.Service-head {
+  font-weight: 600;
+}
+
+input[type="checkbox"]::not(:checked) {
+  background-color: #00443b33 !important;
+}
+
+/* The Modal (background) */
+.buy-api-popup {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.buy-api-popup-content,
+.result-popup-content {
+  background-color: #ffffff;
+  margin: auto;
+  width: 640px;
+  box-shadow: 0px 12px 24px -8px rgba(72, 68, 68, 0.2);
+}
+
+.result-popup-content {
+  width: 480px;
+}
+
+/* The Close Button */
+.close {
+  margin: 8px;
+  background: #e0e0e0;
+  color: #979191;
+  float: right;
+  font-size: 20.5px;
+  padding: 0px 5.37px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-head {
+  /* H3 | Subtitle */
+  padding-top: 16px;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  text-align: center;
+
+  /* Usual Text | 2 */
+
+  color: #4e4b4b;
+}
+
+.popup-form-container {
+  width: 100%;
+}
+
+.credit-details {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+
+  font-feature-settings: "rclt" off;
+  margin: 0 16px;
+  color: #3e4b4b;
+  padding: 16px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.credit-details span {
+  float: right;
+}
+
+.popup-input-container {
+  margin-top: 32px;
+  padding: 0 16px;
+}
+
+.popup-para {
+  position: relative;
+  margin: 32px auto 0;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+
+  text-align: center;
+
+  /* Text 1 */
+
+  color: #011312;
+  width: 357px;
+  text-align: center;
+}
+
+.popup-label {
+  /* H7 | Body 2 */
+  display: block;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "rclt" off;
+
+  /* Text 1 */
+
+  color: #011312;
+}
+
+.popup-input,
+.result-popup-input {
+  border: 1px solid #e7e7e7;
+  /* H7 | Body 2 */
+  margin-top: 8px;
+  width: 592px;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "rclt" off;
+  padding: 16px 8px;
+  /* Default elements */
+
+  color: #a0a7a7;
+}
+.result-popup-input {
+  width: 434px;
+}
+
+.popup-head {
+  margin: 0 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.pay-now-btn {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  background: #008f7d;
+  border: transparent;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+  padding: 16px 64px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 750px) {
+  .buy-api-popup-content,
+  .result-popup-content {
+    width: 480px;
+  }
+  .popup-input,
+  .result-popup-input {
+    width: 434px;
+  }
+  .buy-api-popup {
+    padding-top: 190px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .buy-api-popup-content,
+  .result-popup-content {
+    width: 290px;
+  }
+  .popup-input,
+  .result-popup-input {
+    width: 244px;
+  }
+}

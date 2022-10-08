@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/IBM_Plex_Mono/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/M PLUS 1/stylesheet.css" />
+    <link
+      href="fonts/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c274061b40.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <!-- signup main -->
+    <section class="signup-main">
+      <!-- header -->
+      <header>
+        <div class="signup-head">
+          <img src="img/image 1.png" alt="" />
+          <h3 class="signup-head-title">TelcomData</h3>
+        </div>
+        <h1 class="signup-title">Sign Up</h1>
+        <div class="signup-form">
+          <form action="confirm-mail.html">
+            <div class="input-group">
+              <label for="txtUserName">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="john@example.com"
+              />
+            </div>
+            <div class="input-group">
+              <label for="txtPassword">Password</label>
+              <input
+                type="password"
+                id="txtPassword"
+                class="form-control"
+                name="txtPassword"
+                placeholder="••••••••••••"
+              />
+              <button type="button" id="btnToggle" class="toggle">
+                <i id="eyeIcon" class="fa fa-eye-slash"></i>
+              </button>
+            </div>
+            <div class="input-group">
+              <label for="txtPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="txtPassword2"
+                class="form-control"
+                name="txtPassword"
+                placeholder="••••••••••••"
+              />
+              <button type="button" id="btnToggle2" class="toggle">
+                <i id="eyeIcon2" class="fa fa-eye-slash"></i>
+              </button>
+            </div>
+            <button class="create-account-btn">Create Account</button>
+          </form>
+          <h3 class="already-have-account">
+            Already have an account?<a class="go-to-signin" href="signin.html">
+              Sign in</a
+            >
+          </h3>
+
+          <h5 class="or"><span>or</span></h5>
+          <div class="facebook-google-login">
+            <i class="fa-brands fa-facebook primary"> </i>
+            <i class="fa-brands fa-google red"></i>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <img class="w-100 register-banner" src="img/image.png" alt="" />
+    </section>
+    <!-- end of signup main -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

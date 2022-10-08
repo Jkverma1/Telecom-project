@@ -1,0 +1,218 @@
+.congrats-section {
+  padding-top: 157px;
+  text-align: center;
+}
+
+.congrats-head {
+  /* H3 | Subtitle */
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  text-align: center;
+
+  /* Primary green */
+
+  color: #008f7d;
+}
+
+.congrats-subhead {
+  margin-top: 16px;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  font-feature-settings: "rclt" off;
+
+  /* text 2 */
+
+  color: #3e4b4b;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.congrats-div {
+  text-align: left;
+  width: 398px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.congrats-order {
+  margin-top: 72px;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+
+  font-feature-settings: "rclt" off;
+
+  color: #3e4b4b;
+}
+
+.congrats-order span {
+  color: #a0a7a7;
+}
+
+.congrats-para {
+  /* H7 | Body 2 */
+  margin-top: 64px;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  text-align: center;
+  font-feature-settings: "rclt" off;
+
+  /* Usual Text | 2 */
+
+  color: #4e4b4b;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.back-to-service-btn {
+  border: 1px solid #3e4b4b;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 72px;
+  /* identical to box height */
+  text-align: center;
+
+  /* text 2 */
+  padding: 16px 32px;
+  color: #3e4b4b;
+  margin-bottom: 340px;
+}
+
+.sorry-subhead {
+  margin-top: 48px;
+}
+
+.back-menu {
+  margin-top: 48px;
+  margin-bottom: 528px;
+}
+
+.contact-us-div {
+  display: grid;
+  grid-template-columns: auto 370px;
+  justify-content: space-around;
+  column-gap: 120px;
+}
+
+.contact-info-details {
+  order: 1;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  font-feature-settings: "rclt" off;
+
+  /* text 2 */
+
+  color: #3e4b4b;
+}
+
+.contact-details {
+  order: 2;
+  margin-top: 8px;
+}
+
+.address {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: left;
+  column-gap: 9.33px;
+}
+
+.contact-head {
+  margin-bottom: 48px;
+}
+
+.address svg {
+  padding-top: 6px;
+}
+@media screen and (max-width: 975px) {
+  .contact-us-div {
+    display: grid;
+    grid-template-columns: auto 370px;
+    justify-content: space-around;
+    column-gap: 31px;
+  }
+  .contact-form {
+    width: inherit;
+  }
+  .contact-info-details {
+    width: 329px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-us-div {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .contact-form {
+    width: 290px;
+  }
+  .contact-sub-para {
+    margin-top: 56px;
+  }
+
+  .contact-info-details {
+    text-align: center;
+    order: unset;
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .congrats-div {
+    width: 290px;
+  }
+  .congrats-order {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    font-feature-settings: "rclt" off;
+
+    color: #3e4b4b;
+  }
+
+  .back-to-service-btn {
+    margin-bottom: 120px;
+  }
+  .back-menu {
+    margin-bottom: 120px;
+  }
+}

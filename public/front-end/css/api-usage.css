@@ -1,0 +1,69 @@
+.api-usage-history {
+  display: grid;
+  justify-content: center;
+  padding: 117px 0 407px;
+}
+
+.back-dashboard-btn {
+  text-decoration: none;
+  /* Button text */
+
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  /* text 2 */
+
+  color: #3e4b4b;
+}
+
+.m-16 {
+  margin-top: 16px;
+}
+
+.api-usage-head-container {
+  margin-top: 59.5px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 24px;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.Date-ranges {
+  display: grid;
+  grid-template-columns: 87px auto;
+  vertical-align: middle;
+  align-items: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .api-usage-head-container {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 707px) {
+  .main-table {
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .empty {
+    display: none;
+  }
+  .api-usage-head-container {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-table {
+    width: 290px;
+    position: relative;
+    margin: 0 auto;
+  }
+}

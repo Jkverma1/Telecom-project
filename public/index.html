@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telecom</title>
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="front-end/fonts/IBM_Plex_Mono/stylesheet.css"
+    />
+    <link rel="stylesheet" href="front-end/fonts/M PLUS 1/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="front-end/fonts/IBM_Plex_Sans/stylesheet.css"
+    />
+    <link rel="stylesheet" href="front-end/fonts/poppins/stylesheet.css" />
+    <link
+      href="front-end/fonts/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="front-end/css/font-awesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/c274061b40.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script -->
+    <script src="front-end/js/jquery-3.6.1.js"></script>
+    <script src="front-end/js/semantic.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="front-end/css/main.css" />
+    <link rel="stylesheet" href="front-end/css/semantic.min.css" />
+    <link rel="stylesheet" href="front-end/css/pricing.css" />
+    <link rel="stylesheet" href="front-end/css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="front-end/fonts/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="front-end/css/style.css" />
+    <link rel="stylesheet" href="front-end/css/about.css" />
+    <link rel="stylesheet" href="front-end/css/task-listing.css" />
+    <link rel="stylesheet" href="front-end/css/number-monitoring.css" />
+    <link rel="stylesheet" href="front-end/css/number-mapping-result.css" />
+    <link rel="stylesheet" href="front-end/css/state-distribution.css" />
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <script src="/public/front-end/js/jquery-3.6.1.js"></script>
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          $(".login-btn").addClass("topfix");
+          console.log("OK");
+          $(".navTrigger").addClass("affix");
+        } else {
+          $(".nav").removeClass("affix");
+          $(".login-btn").removeClass("topfix");
+          $(".navTrigger").removeClass("affix");
+        }
+      });
+    </script>
+    <script src="front-end/js/main.js"></script>
   </body>
 </html>

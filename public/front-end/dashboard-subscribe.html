@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/IBM_Plex_Mono/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/M PLUS 1/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/IBM_Plex_Sans/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/poppins/stylesheet.css" />
+    <link
+      href="fonts/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/c274061b40.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/semantic.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/semantic.min.css" />
+    <link rel="stylesheet" href="css/pricing.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="fonts/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/task-listing.css">
+    <link rel="stylesheet" href="css/number-monitoring.css" />
+    <link rel="stylesheet" href="css/number-mapping-result.css" />
+    <link rel="stylesheet" href="css/state-distribution.css" />
+
+  </head>
+  <body>
+
+    <div class="state-distribution-background-overlay-popup">
+      <!-- fraud description -->
+      <div class="fraud-description-popup">
+        <span class="close-btn" onclick="closeFraudDescription()"
+          >&times;</span
+        >
+        <h1 class="logout-popup-head task-popup-head">Fraud Description</h1>
+        <div class="three-pie-chart-Detail-container">
+          <div class="three-pie-chart">
+            <div class="pie-circle-1">
+              <span class="three-pie-text three-pie-text1">Spam</span>
+            </div>
+            <div class="bottom-circle-container">
+              <div class="pie-circle-2">
+                <span class="three-pie-text three-pie-text2">Fraud</span>
+              </div>
+              <div class="pie-circle-3">
+                <span class="three-pie-text three-pie-text3">FTC</span>
+              </div>
+            </div>
+          </div>
+          <div class="pie-chart-text-container">
+            <table class="pie-chart-table three-pie-chart-table">
+              <thead>
+                <th>State</th>
+                <th>Count</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 state</td>
+                  <td>10000</td>
+                </tr>
+                <tr>
+                  <td>2 state</td>
+                  <td>55326</td>
+                </tr>
+                <tr>
+                  <td>3 state</td>
+                  <td>535</td>
+                </tr>
+                <tr>
+                  <td>4 state</td>
+                  <td>647</td>
+                </tr>
+                <tr>
+                  <td>5 state</td>
+                  <td>8967</td>
+                </tr>
+                <tr>
+                  <td>6 state</td>
+                  <td>4356</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="logout-popup-btn-container m-32">
+          <a class="cancel-btn" onclick="closeFraudDescription()"
+            >Close</a
+          >
+        </div>
+      </div>
+            <!-- state distribution popup -->
+            <div class="mapping-state-distribution-popup">
+              <span class="close-btn" onclick="closestateDistributionPopup()"
+                >&times;</span
+              >
+              <h1 class="logout-popup-head task-popup-head">State Distribution</h1>
+              <div class="pie-chart-Detail-container">
+                <div class="box">
+                  <div class="pie">
+                    <h3 class="pie-slice-head1">CA 55%</h3>
+                    <h3 class="pie-slice-head2">Data 20%</h3>
+                    <h3 class="pie-slice-head3">Data 15%</h3>
+                    <div class="slice" data-start="0" data-value="55">
+                      <div class="slice-fill"></div>
+                      <div class="bg-fill"></div>
+                    </div>
+                    <div class="slice" data-start="55" data-value="30">
+                      <div class="slice-fill"></div>
+                      <div class="bg-fill"></div>
+                    </div>
+                    <div class="slice" data-start="85" data-value="15">
+                      <div class="slice-fill"></div>
+                      <div class="bg-fill"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pie-chart-text-container">
+                  <table class="pie-chart-table">
+                    <thead>
+                      <th>State</th>
+                      <th>Count</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1 state</td>
+                        <td>10000</td>
+                      </tr>
+                      <tr>
+                        <td>2 state</td>
+                        <td>55326</td>
+                      </tr>
+                      <tr>
+                        <td>3 state</td>
+                        <td>535</td>
+                      </tr>
+                      <tr>
+                        <td>4 state</td>
+                        <td>647</td>
+                      </tr>
+                      <tr>
+                        <td>5 state</td>
+                        <td>8967</td>
+                      </tr>
+                      <tr>
+                        <td>6 state</td>
+                        <td>4356</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="logout-popup-btn-container m-32">
+                <a class="cancel-btn" onclick="closestateDistributionPopup()"
+                  >Close</a
+                >
+              </div>
+            </div>
+    </div>
+
+    <div class="Number-scrubbing-background-overlay-popup">
+      <!-- scrubbing popup -->
+      <div class="Number-scrubbing-task-listing-popup">
+        <span class="close-btn" onclick="closenumberScrubbingtaskListingPopup()">&times;</span>
+        <h1 class="logout-popup-head task-popup-head">Task Details</h1>
+        <div class="scrubbing-task-record-detail">
+          <div class="scrubbing-task-record-head-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.71484 12C10.8658 12 11.7148 11.151 11.7148 10C11.7148 8.849 10.8658 8 9.71484 8C8.56384 8 7.71484 8.849 7.71484 10C7.71484 11.151 8.56284 12 9.71484 12Z" fill="#A0A7A7"/>
+              <path d="M20 4H4C2.897 4 2 4.841 2 5.875V18.125C2 19.159 2.897 20 4 20H20C21.103 20 22 19.159 22 18.125V5.875C22 4.841 21.103 4 20 4ZM20 18L4 17.989V6L20 6.011V18Z" fill="#A0A7A7"/>
+              <path d="M14 9H18V11H14V9ZM15 13H18V15H15V13ZM13.43 15.536C13.43 14.162 11.754 12.75 9.715 12.75C7.676 12.75 6 14.162 6 15.536V16H13.43V15.536Z" fill="#A0A7A7"/>
+              </svg>
+              <h1>Nevada-List.csv</h1>
+              <button class="detailoption-btn">Details</button>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.862 6.19531L7.99998 9.05731L5.13798 6.19531L4.19531 7.13798L7.99998 10.9426L11.8046 7.13798L10.862 6.19531Z" fill="#3E4B4B"/>
+                </svg>
+                
+          </div>
+          <div class="scrubbing-task-record-head-2">
+            <div class="scrubbing-task-record-sub-head1">
+              Uploaded by:
+              <span class="record-sub-head1-span">John Doe</span>
+            </div>
+            <div class="scrubbing-task-record-sub-head1">
+              Date:
+              <span class="record-sub-head1-span">01/08/22 05:11:24 PM</span>
+            </div>
+            <div class="scrubbing-task-record-sub-head2">
+              Total Records:
+              <span class="record-sub-head2-span">543,695</span>
+            </div>
+          </div>
+        </div>
+        <div class="scrubbing-task-detail-main-frame">
+          <div class="scrubbing-main-frame-bill-box">
+            <div class="scrubbing-bill-box bill-box-container-1">
+              <span class="scrubbing-task-bill-title">Billable Phone Numbers</span>
+              <span class="scrubbing-task-bill-detail">543.692</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-1">
+              <span class="scrubbing-task-bill-title">Malformed Records</span>
+              <span class="scrubbing-task-bill-detail">3</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-1">
+              <span class="scrubbing-task-bill-title">VoIP</span>
+              <span class="scrubbing-task-bill-detail">24,425</span>
+            </div>
+          </div>
+          <div class="scrubbing-main-frame-bill-box">
+            <div class="scrubbing-bill-box bill-box-container-2">
+              <span class="scrubbing-task-bill-title">Clean</span>
+              <span class="scrubbing-task-bill-detail text-green">543.692</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-2">
+              <span class="scrubbing-task-bill-title">Invalid</span>
+              <span class="scrubbing-task-bill-detail">31</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-2">
+              <span class="scrubbing-task-bill-title">Blocked</span>
+              <span class="scrubbing-task-bill-detail">32</span>
+            </div>
+          </div>
+          <div class="scrubbing-main-frame-bill-box">
+            <div class="scrubbing-bill-box bill-box-container-3">
+              <span class="scrubbing-task-bill-title">EBR</span>
+              <span class="scrubbing-task-bill-detail">543.692</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-3">
+              <span class="scrubbing-task-bill-title">Wireless</span>
+              <span class="scrubbing-task-bill-detail">3</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-3">
+              <span class="scrubbing-task-bill-title">Do Not Call</span>
+              <span class="scrubbing-task-bill-detail text-red">365,112</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of main frame -->
+        <div class="output-file-container">
+          <div class="output-download-details">
+            <button class="output-download-btn">
+              Download Output File
+            </button>
+            <span class="output-file-size">7.1MB</span>
+          </div>
+          <div class="output-download-history">
+            <span class="output-scrub-date"><span class="output-scrub-date-title">Scrub done:</span> 12/06/2022</span>
+            <span class="output-last-dowload"><span class="output-scrub-date-title">Last download:</span> 02/08/2022 01:40:18 PM</span>
+          </div>
+        </div>
+
+        <div class="logout-popup-btn-container m-32">
+          <a class="cancel-btn" onclick="closenumberScrubbingtaskListingPopup()">Close</a>
+        </div>
+      </div>
+    </div>
+    <div class="Number-detail-background-overlay-popup">
+      <div class="Number-detail-popup">
+        <span class="close-btn" onclick="closenumberMonitoringPopup()">&times;</span>
+        <h1 class="logout-popup-head">Number Details</h1>
+        <h3 class="number-detail-sub-head-popup">(704) 555-0127</h3>
+        <div class="api-frame confirm-payment-text-div m-32">
+          <div class="api-frame-input">
+            <label for="">LRN</label>
+            <label for="">189485 66 0822</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Spam Score</label>
+            <label for="">4567</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Fraud Score</label>
+            <label for="">19</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">LATA</label>
+            <label for="">10</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Rate Center</label>
+            <label for="">Center Name</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">State</label>
+            <label for="">California</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Operator Name</label>
+            <label for="">Virgin Mobile</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Operator Type</label>
+            <label for="">-</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Last Seen in FTC</label>
+            <label for="">September 2022</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">In DNC</label>
+            <label for="">California</label>
+          </div>
+        </div>
+        <div class="logout-popup-btn-container m-32">
+          <a class="cancel-btn" onclick="closenumberMonitoringPopup()">Close</a>
+        </div>
+      </div>
+    </div>
+    <div class="background-overlay-popup">
+      <div class="buy-api-popup">
+        <span class="close-btn" onclick="closeApipopup()">&times;</span>
+        <h1 class="logout-popup-head">Buy API Credit</h1>
+        <div class="api-frame">
+          <div class="api-frame-input">
+            <label for="credit-for-buy">How Many API Credit to buy</label>
+            <input
+              class="credit-for-buy"
+              type="text"
+              name="credit-for-buy"
+              id=""
+              placeholder="1000"
+            />
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">The Cost is</label>
+            <label for="">$500</label>
+          </div>
+        </div>
+        <div class="logout-popup-btn-container">
+          <a class="logout-btn" href="#">Pay Now</a>
+        </div>
+      </div>
+      <div class="extend-date-popup">
+        <span class="close-btn" onclick="closeextendDate()">&times;</span>
+        <h1 class="logout-popup-head">Extend the monitoring quota</h1>
+        <div class="api-frame">
+          <div class="api-frame-input">
+            <label for="credit-for-buy">Date</label>
+            <div class="ui calendar" id="example1">
+              <div class="ui input icon">
+                <input type="text" placeholder="29/09/2023" />
+                <svg
+                  class="calender-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.0625 0C3.17853 0 3.28981 0.0460936 3.37186 0.128141C3.45391 0.210188 3.5 0.321468 3.5 0.4375V0.875H10.5V0.4375C10.5 0.321468 10.5461 0.210188 10.6281 0.128141C10.7102 0.0460936 10.8215 0 10.9375 0C11.0535 0 11.1648 0.0460936 11.2469 0.128141C11.3289 0.210188 11.375 0.321468 11.375 0.4375V0.875H12.25C12.7141 0.875 13.1592 1.05937 13.4874 1.38756C13.8156 1.71575 14 2.16087 14 2.625V12.25C14 12.7141 13.8156 13.1592 13.4874 13.4874C13.1592 13.8156 12.7141 14 12.25 14H1.75C1.28587 14 0.840752 13.8156 0.512563 13.4874C0.184374 13.1592 0 12.7141 0 12.25V2.625C0 2.16087 0.184374 1.71575 0.512563 1.38756C0.840752 1.05937 1.28587 0.875 1.75 0.875H2.625V0.4375C2.625 0.321468 2.67109 0.210188 2.75314 0.128141C2.83519 0.0460936 2.94647 0 3.0625 0V0ZM1.75 1.75C1.51794 1.75 1.29538 1.84219 1.13128 2.00628C0.967187 2.17038 0.875 2.39294 0.875 2.625V3.5H13.125V2.625C13.125 2.39294 13.0328 2.17038 12.8687 2.00628C12.7046 1.84219 12.4821 1.75 12.25 1.75H1.75ZM13.125 4.375H0.875V12.25C0.875 12.4821 0.967187 12.7046 1.13128 12.8687C1.29538 13.0328 1.51794 13.125 1.75 13.125H12.25C12.4821 13.125 12.7046 13.0328 12.8687 12.8687C13.0328 12.7046 13.125 12.4821 13.125 12.25V4.375Z"
+                    fill="#4E4B4B"
+                  />
+                </svg>
+              </div>
+            </div>
+            <script>
+              $("#example1").calendar({
+                type: "date",
+              });
+            </script>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">The Cost is</label>
+            <label for="">$500</label>
+          </div>
+        </div>
+        <div class="logout-popup-btn-container">
+          <a class="logout-btn" href="#">Pay Now</a>
+        </div>
+      </div>
+      <div class="buy-api-popup">
+        <span class="close-btn" onclick="closeApipopup()">&times;</span>
+        <h1 class="logout-popup-head">Buy API Credit</h1>
+        <div class="api-frame">
+          <div class="api-frame-input">
+            <label for="credit-for-buy">How Many API Credit to buy</label>
+            <input
+              class="credit-for-buy"
+              type="text"
+              name="credit-for-buy"
+              id=""
+              placeholder="1000"
+            />
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">The Cost is</label>
+            <label for="">$500</label>
+          </div>
+        </div>
+        <div class="logout-popup-btn-container">
+          <a class="logout-btn" href="#">Pay Now</a>
+        </div>
+      </div>
+    </div>
+    <nav class="nav affix">
+      <div class="container">
+        <div class="logo">
+          <a href="/"
+            ><div class="nav-brand">
+              <img src="img/white-logo.png" alt="" />
+              <h3 class="nav-title">TelcomData</h3>
+            </div></a
+          >
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li onclick="serviceItems()"><a href="#">Services <i class="fa-solid fa-chevron-down service-down"></i></a>
+              <ul id="service-items">
+                <li><a href="number-mapping.html">Number Mapping</a></li>
+                <li><a href="number-scrubbing.html">Number Scrubbing</a></li>
+                <li><a href="#">Number Monitoring</a></li>
+                <li><a href="#">Data Subscription</a></li>
+                <li><a href="#">Number API </a></li>
+              </ul>
+              
+              </li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="api-key.html">API</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li id="login-container">
+              <a class="login-btn topfix" id="login-btn" onclick="logoutbtn()"
+                >Log Out</a
+              >
+            </li>
+          </ul>
+        </div>
+        <span class="navTrigger affix">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+    <div class="logout-popup">
+      <span class="close-btn" onclick="closelogoutpopup()">&times;</span>
+      <h1 class="logout-popup-head">Log out of your account?</h1>
+      <div class="logout-popup-btn-container">
+        <a class="logout-btn" href="signin.html">Yes, Log out</a>
+        <a class="cancel-btn" onclick="closelogoutpopup()">Cancel</a>
+      </div>
+    </div>
+
+    <section class="toogle-menu">
+      <div class="button-wrap">
+        <!-- button 1 -->
+        <a href="#" class="button">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.25 14.25H14.25V0.75H0.75V14.25H5.25ZM12.75 11.25V12.75H8.25V8.25H12.75V11.25ZM9.75 2.25H12.75V6.75H8.25V2.25H9.75ZM2.25 3.75V2.25H6.75V6.75H2.25V3.75ZM2.25 12.75V8.25H6.75V12.75H2.25Z"
+              fill="#008F7D"
+            />
+          </svg>
+          Dashboard
+        </a>
+        <!-- button 2 -->
+        <a href="#" class="button">
+          <svg
+            width="14"
+            height="10"
+            viewBox="0 0 14 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.549805 0H8.7998V1.5H0.549805V0ZM0.549805 3H8.7998V4.5H0.549805V3ZM0.549805 6H5.7998V7.5H0.549805V6ZM12.0241 3.969L8.79905 7.18725L7.83005 6.219L6.76956 7.28025L8.79905 9.30825L13.0831 5.031L12.0241 3.969Z"
+              fill="#A0A7A7"
+            />
+          </svg>
+          Number Monitoring
+        </a>
+
+        <!-- button 3 -->
+        <a href="#" class="button">
+          <svg
+            width="12"
+            height="15"
+            viewBox="0 0 12 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 11.25V3.75C12 2.124 9.25275 0.75 6 0.75C2.74725 0.75 0 2.124 0 3.75V11.25C0 12.876 2.74725 14.25 6 14.25C9.25275 14.25 12 12.876 12 11.25ZM6 2.25C8.76825 2.25 10.4482 3.38025 10.5 3.7455C10.4482 4.11975 8.76825 5.25 6 5.25C3.23175 5.25 1.55175 4.11975 1.5 3.7545C1.55175 3.38025 3.23175 2.25 6 2.25ZM1.5 5.70525C2.60925 6.3405 4.22775 6.75 6 6.75C7.77225 6.75 9.39075 6.3405 10.5 5.70525V7.4955C10.4482 7.86975 8.76825 9 6 9C3.23175 9 1.55175 7.86975 1.5 7.5V5.70525ZM1.5 11.25V9.45525C2.60925 10.0905 4.22775 10.5 6 10.5C7.77225 10.5 9.39075 10.0905 10.5 9.45525V11.2455C10.4482 11.6198 8.76825 12.75 6 12.75C3.23175 12.75 1.55175 11.6198 1.5 11.25Z"
+              fill="#A0A7A7"
+            />
+          </svg>
+          Number Scrubbing
+        </a>
+
+        <!-- button 4 -->
+        <a href="#" class="button">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.75 6H2.25C1.42275 6 0.75 6.67275 0.75 7.5V13.5C0.75 14.3273 1.42275 15 2.25 15H12.75C13.5773 15 14.25 14.3273 14.25 13.5V7.5C14.25 6.67275 13.5773 6 12.75 6ZM2.25 13.5V7.5H12.75L12.7515 13.5H2.25ZM2.25 3H12.75V4.5H2.25V3ZM3.75 0H11.25V1.5H3.75V0Z"
+              fill="#A0A7A7"
+            />
+          </svg>
+          Number Mapping
+        </a>
+
+        <!-- button 5 -->
+        <a href="#" class="button">
+          <svg
+            width="16"
+            height="15"
+            viewBox="0 0 16 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 12.75H3.5C3.5 13.5773 4.17275 14.25 5 14.25H11C11.8273 14.25 12.5 13.5773 12.5 12.75H14C14.8273 12.75 15.5 12.0773 15.5 11.25V3.75C15.5 2.92275 14.8273 2.25 14 2.25H12.5C12.5 1.42275 11.8273 0.75 11 0.75H5C4.17275 0.75 3.5 1.42275 3.5 2.25H2C1.17275 2.25 0.5 2.92275 0.5 3.75V11.25C0.5 12.0773 1.17275 12.75 2 12.75ZM14 3.75V11.25H12.5V3.75H14ZM5 2.25H11L11.0007 12.75H5V2.25ZM2 3.75H3.5V11.25H2V3.75Z"
+              fill="#A0A7A7"
+            />
+          </svg>
+          Data Subscription
+        </a>
+      </div>
+
+      <div class="content">
+        <section class="content-1 active Dashboard">
+          <h1 class="table-head">You have subscribe to the following data</h1>
+          <table class="main-table">
+            <thead>
+              <tr class="th-container2">
+                <th>Data Type</th>
+                <th>Expiry Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LRN</td>
+                <td>2022-12-31</td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn" onclick="renewPrice()">
+                    Extend
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>DNC</td>
+                <td>2022-12-31</td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn" onclick="renewPrice()">
+                    Extend
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>LERG</td>
+                <td>2022-12-31</td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn" onclick="renewPrice()">
+                    Extend
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h1 class="table-head">Number Monitoring Quota</h1>
+          <table class="main-table">
+            <thead>
+              <tr class="th-container">
+                <th>Quota</th>
+                <th>Used</th>
+                <th>Expiry Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>3202</td>
+                <td>2022-12-31</td>
+                <td class="subscribe-btn-td">
+                  <button
+                    class="subscribe-btn extended-btn"
+                    onclick="extenddatepopup()"
+                  >
+                    Extend
+                  </button>
+                  <button class="subscribe-btn extended-btn">Add Quota</button>
+                  <ul class="extended-btn-td" onclick="showDropdown()">
+                    <div class="dropdown-div">
+                      <li>Extend</li>
+                      <li>Add Quota</li>
+                    </div>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h1 class="table-head">
+            Data API Credit
+            <button
+              class="app-usage-btn"
+              onclick="location.href='api-usage-history.html'"
+            >
+              API usage history
+            </button>
+          </h1>
+          <table class="main-table">
+            <thead>
+              <tr class="th-container2">
+                <th>Total Credit Purchased</th>
+                <th>Used</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>520 / 10000</td>
+                <td class="subscribe-btn-td">
+                  <button
+                    class="subscribe-btn extended-btn"
+                    onclick="buyApipopup()"
+                  >
+                    Purchase More
+                  </button>
+                  <ul class="extended-btn-td" onclick="showDropdown()">
+                    <div class="dropdown-div">
+                      <li>Purchase More</li>
+                    </div>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- number monitoring -->
+        <section class="content-2">
+
+
+<!-- number-monitoring -->
+<div class="number-monitoring">
+  <a class="back-to-listing" href="dashboard-subscribe.html">
+    <i class="fa-solid fa-chevron-left back-to-dashboard"></i>
+    Back to Listing
+  </a>
+  <!-- top menu -->
+  <div class="monitoring-main-top-menu m-s-21">
+    <div class="monitoring-top-btn-container">
+      <button class="top-menu-btn" onclick="monitoringUploadBtn()">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="upload-btn-icon"
+            d="M7.33301 10.6668H8.66634V4.66683H10.6663L7.99967 1.3335L5.33301 4.66683H7.33301V10.6668Z"
+            fill="#3E4B4B"
+          />
+          <path
+          class="upload-btn-icon"
+            d="M3.33333 14.6667H12.6667C13.402 14.6667 14 14.0687 14 13.3333V7.33333C14 6.598 13.402 6 12.6667 6H10V7.33333H12.6667V13.3333H3.33333V7.33333H6V6H3.33333C2.598 6 2 6.598 2 7.33333V13.3333C2 14.0687 2.598 14.6667 3.33333 14.6667Z"
+            fill="#3E4B4B"
+          />
+        </svg>
+        Upload Numbers
+      </button>
+      <button class="top-menu-btn" onclick="MonitoringAddManual()">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        Add manually
+      </button>
+    </div>
+    <div class="filter-menu-container">
+      <div class="filter-container">
+        <form action="/action_page.php">
+          <label class="filter-label" for="filter-by">Filter by</label>
+          <select
+            class="choose-filter"
+            type="text"
+            name="filter-by"
+            placeholder="Choose Filter"
+          >
+            <option
+              class="default-option"
+              value="none"
+              selected
+              disabled
+              hidden
+            >
+              -Choose Filter-
+            </option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">3</option>
+          </select>
+        </form>
+      </div>
+      <div class="quota-top-menu">
+        <h3 class="quota-head">
+          <span class="quota-title">Quota left:</span>
+          320/10000
+        </h3>
+        <input
+          class="Add-Quota top-menu-btn"
+          type="submit"
+          value="Add Quota"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- end of top menu -->
+  <div class="monitoring-upload-content text-center">
+    <form class="form-container">
+      <div class="upload-files-container">
+        <div class="drag-file-area m-68">
+          <h3 class="dynamic-message">Upload number file</h3>
+          <span class="browse-files">
+            <label class="label"><span class="browse-files"> Click to <input type="file" class="default-file-input"/> <span class="browse-files-text">browse</span> <span>or drag & drop</span> </span> </label>
+        </div>
+          <button type="button" class="upload-button">
+            <svg class="monitoring-upload-plus" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3331 6.05599H6.44419V1.1671C6.44419 1.04923 6.39737 0.936181 6.31402 0.852831C6.23067 0.769482 6.11762 0.722656 5.99975 0.722656C5.88187 0.722656 5.76883 0.769482 5.68548 0.852831C5.60213 0.936181 5.5553 1.04923 5.5553 1.1671V6.05599H0.666415C0.548541 6.05599 0.435495 6.10281 0.352146 6.18616C0.268796 6.26951 0.221971 6.38256 0.221971 6.50043C0.219778 6.5582 0.229992 6.61576 0.251924 6.66924C0.273857 6.72272 0.306999 6.77088 0.349116 6.81047C0.391234 6.85006 0.441348 6.88016 0.496082 6.89875C0.550817 6.91733 0.608899 6.92397 0.666415 6.91821H5.5553V11.8338C5.5553 11.9516 5.60213 12.0647 5.68548 12.148C5.76883 12.2314 5.88187 12.2782 5.99975 12.2782C6.11762 12.2782 6.23067 12.2314 6.31402 12.148C6.39737 12.0647 6.44419 11.9516 6.44419 11.8338V6.94488H11.3331C11.451 6.94488 11.564 6.89805 11.6474 6.8147C11.7307 6.73135 11.7775 6.61831 11.7775 6.50043C11.7775 6.38256 11.7307 6.26951 11.6474 6.18616C11.564 6.10281 11.451 6.05599 11.3331 6.05599Z" fill="#E7E7E7"/>
+              </svg>              
+            Add uploaded numbers
+          </button>
+      </div>
+  </form>
+  </div>
+  <!-- end of upload content -->
+  <div class="add-manual-content">
+    <label class="add-manual-label" for="add-manual-list-of-number">Add list of numbers</label>
+    <textarea name="add-manual-list-of-number" class="add-manual-textarea" cols="130" rows="10" placeholder="| (704) 555-0127, (607) 500-0845, ..."></textarea>
+    <button type="button" class="upload-button m-l-39">
+      <svg class="monitoring-upload-plus" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.3331 6.05599H6.44419V1.1671C6.44419 1.04923 6.39737 0.936181 6.31402 0.852831C6.23067 0.769482 6.11762 0.722656 5.99975 0.722656C5.88187 0.722656 5.76883 0.769482 5.68548 0.852831C5.60213 0.936181 5.5553 1.04923 5.5553 1.1671V6.05599H0.666415C0.548541 6.05599 0.435495 6.10281 0.352146 6.18616C0.268796 6.26951 0.221971 6.38256 0.221971 6.50043C0.219778 6.5582 0.229992 6.61576 0.251924 6.66924C0.273857 6.72272 0.306999 6.77088 0.349116 6.81047C0.391234 6.85006 0.441348 6.88016 0.496082 6.89875C0.550817 6.91733 0.608899 6.92397 0.666415 6.91821H5.5553V11.8338C5.5553 11.9516 5.60213 12.0647 5.68548 12.148C5.76883 12.2314 5.88187 12.2782 5.99975 12.2782C6.11762 12.2782 6.23067 12.2314 6.31402 12.148C6.39737 12.0647 6.44419 11.9516 6.44419 11.8338V6.94488H11.3331C11.451 6.94488 11.564 6.89805 11.6474 6.8147C11.7307 6.73135 11.7775 6.61831 11.7775 6.50043C11.7775 6.38256 11.7307 6.26951 11.6474 6.18616C11.564 6.10281 11.451 6.05599 11.3331 6.05599Z" fill="#E7E7E7"/>
+        </svg>              
+      Add uploaded numbers
+    </button>
+  </div>
+  <div class="rolling-table">
+    <table class="number-monitoring-table">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Label</th>
+          <th>Most Recent Spam Score</th>
+          <th>Historical Spam Score</th>
+          <th>Max: Spam Score</th>
+          <th>Region</th>
+          <th>Locale</th>
+          <th>FTC Complaints</th>
+          <th>App Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            High
+          </td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            High
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            Flagged
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="medium-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#F2994A" />
+            </svg>
+            Medium
+          </td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            High
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            Flagged
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr onclick="numberMonitoringPopup()">
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- show btn -->
+  <div class="show-container">
+    <div class="show-details">
+      <form action="#">
+        <label class="show-label" for="show">Show</label>
+        <select class="show-select-btn" name="show" id="cars">
+          <option value="10">10</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+        </select>
+      </form>
+      <span class="page-index">1-10 of 40</span>
+    </div>
+    <div>
+      <i class="fa-solid fa-chevron-left show-list-left"></i>
+      <h3 class="page-number active-page-number">1</h3>
+      <h3 class="page-number">2</h3>
+      <h3 class="page-number">3</h3>
+      <h3 class="page-number">4</h3>
+      <i class="fa-solid fa-chevron-right show-list-right"></i>
+    </div>
+  </div>
+</div>
+<!-- end of number monitoring -->
+        </section>
+        <!-- end of number monitoring -->
+        <section class="content-2">
+          <div class="sub-btn-container">
+            <button class="first-button sub-btn active-sub-btn" onclick="subBtn1()">
+              add number mapping Task
+            </button>
+            <button class="second-button sub-btn" onclick="subBtn2()">Task Listing</button>
+            <div class="confirm-payment-task-popup">
+              <span class="close-btn" onclick="closeconfirmPaymentTask()">&times;</span>
+              <h1 class="logout-popup-head">Confirm payment for this task</h1>
+              <div class="api-frame confirm-payment-text-div m-32">
+                <div class="api-frame-input">
+                  <label for="">Number of Records</label>
+                  <label for="">1000</label>
+                </div>
+                <div class="api-frame-input m-32">
+                  <label for="">Fee</label>
+                  <label for="">$10.00 USD</label>
+                </div>
+              </div>
+              <div class="logout-popup-btn-container m-32">
+                <a class="cancel-btn" onclick="closeconfirmPaymentTask()">Back</a>
+                <a class="logout-btn" href="#">Pay Now</a>
+              </div>
+            </div>
+          </div>
+          <div id="sub-tab-1">
+            <!-- number scrubbing -->
+<div class="number-mapping m-32">
+  <p class="service-sub-para">
+    Upload a file with and we will map the file with parameters select
+  </p>
+  <h5 class="file-upload-head">File Upload</h5>
+
+  <form class="form-container">
+    <div class="upload-files-container">
+      <div class="drag-file-area">
+        <h3 class="dynamic-message m68-5">Upload number file</h3>
+        <span class="browse-files">
+         
+          <label class="label"><span class="browse-files"> Click to <input type="file" class="default-file-input"/> <span class="browse-files-text">browse</span> <span>or drag & drop</span> </span> </label>
+          </label>
+          
+      </div>
+      
+      <div class="text-center checkbox-container">
+        <label for="Select-field" class="select-field-head">Inclusion Criteria</label>
+          <div class="include-exclude">
+            
+          </div>
+        </div>
+        <div class="checkbox-grid2">
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Excluse SPAM Number in Youmail</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Excluse Numbers in DNC</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Exclude Mobile Number</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Excluse Fraud Number in Youmail</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Excluse Numbers in FTC</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Exclude Landline Number</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Exclude Canada Number</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox">
+            <label>Exclude Non-US Number</label>
+          </div>
+        </div>
+        <div class="row-6-6">
+          <div>
+            <h2 class="tags-add-label">Include Operators</h2>
+<input type="text" id="tag-input1">
+          </div>
+          <div>
+            <h2 class="tags-add-label">Exclude Operators</h2>
+<input type="text" id="tag-input2">
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <button type="button" class="upload-button" onclick="confirmPaymentTask()">Submit</button>
+      </div>
+    </div>
+  </form>   
+  <!-- end of number scrubbing -->
+          </div>
+          <div id="sub-tab-2">
+            <div class="rolling-table box-shadow-task-listing">
+              <table class="number-monitoring-table number-scrubing-task-listing">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Upload File</th>
+                    <th>Count</th>
+                    <th>Started</th>
+                    <th>Finished On</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="high-span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+                      </svg>
+                      Cancelled
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- start of number scrubbing task listing -->
+            <div class="show-container">
+              <div class="show-details">
+                  <form action="#">
+                      <label class="show-label" for="show">Show</label>
+                      <select class="show-select-btn" name="show" id="cars">
+                      <option value="10">10</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      </select>
+                  </form>
+                  <span class="page-index">1-10 of 40</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-chevron-left show-list-left"></i>
+                  <h3 class="page-number active-page-number">1</h3>
+                  <h3 class="page-number">2</h3>
+                  <h3 class="page-number">3</h3>
+                  <h3 class="page-number">4</h3>
+                  <i class="fa-solid fa-chevron-right show-list-right"></i>
+              </div>
+         </div>
+                  <!-- end of number scrubbing task listing -->
+            <!-- show btn -->
+  
+          </div>
+        </section>
+        <section class="content-2">
+          <div class="sub-btn-container" id="add-mapping-task-listing">
+            <button class="third-button sub-btn active-sub-btn" onclick="subBtn3()">
+              add number mapping Task
+            </button>
+            <button class="fourth-button sub-btn" onclick="subBtn4()">Task Listing</button>
+            <div class="confirm-payment-task-popup">
+              <span class="close-btn" onclick="closeconfirmPaymentTask2()">&times;</span>
+              <h1 class="logout-popup-head">Confirm payment for this task</h1>
+              <div class="api-frame confirm-payment-text-div m-32">
+                <div class="api-frame-input">
+                  <label for="">Number of Records</label>
+                  <label for="">1000</label>
+                </div>
+                <div class="api-frame-input m-32">
+                  <label for="">Fee</label>
+                  <label for="">$10.00 USD</label>
+                </div>
+              </div>
+              <div class="logout-popup-btn-container m-32">
+                <a class="cancel-btn" onclick="closeconfirmPaymentTask2()">Back</a>
+                <a class="logout-btn" href="#">Pay Now</a>
+              </div>
+            </div>
+          </div>
+          <div id="sub-tab-3">
+          <!-- number mapping -->
+    <div class="number-mapping">
+      <p class="service-sub-para mp-32">
+        Upload a file with and we will map the file with parameters select
+      </p>
+      <h5 class="file-upload-head">File Upload</h5>
+
+
+      <form class="form-container">
+        <div class="upload-files-container">
+          <div class="drag-file-area">
+            <h3 class="dynamic-message m68-5">Upload number file</h3>
+            <span class="browse-files">
+             
+              <label class="label"><span class="browse-files"> Click to <input type="file" class="default-file-input"/> <span class="browse-files-text">browse</span> <span>or drag & drop</span> </span> </label>
+              </label>
+              
+          </div>
+          
+          <div class="text-center checkbox-container">
+            <label for="Select-field" class="select-field-head">Select fields</label>
+            <div class="checkbox-grid">
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>DNC</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>State</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>LATA</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Operating Company</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Rate Center</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Operator Type</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>FTC Database</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>LNR</label>
+              </div>
+
+            </div>
+            <div>
+
+            </div>
+            <button type="button" class="upload-button">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="sub-tab-4">
+    <div class="rolling-table box-shadow-task-listing">
+      <table class="number-monitoring-table number-scrubing-task-listing">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Upload File</th>
+            <th>Count</th>
+            <th>Started</th>
+            <th>Finished On</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+           <td class="vertical-menu-td">
+            <button class="vertical-dot-menu">
+              <ul class="task-listing-vertical-menu">
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                <li class="task-listing-vertical-menu-list-item">Add task</li>
+              </ul>
+            </button>
+           </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="high-span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+              </svg>
+              Cancelled
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+              <button class="vertical-dot-menu">
+                <ul class="task-listing-vertical-menu">
+                  <li class="task-listing-vertical-menu-list-item" onclick="taskListingDetail()">Detail</li>
+                <li class="task-listing-vertical-menu-list-item" onclick="taskListingResult()">Result</li>
+                  <li class="task-listing-vertical-menu-list-item">Add task</li>
+                </ul>
+              </button>
+             </td>
+          </tr>
+          <tr>
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+            <td class="vertical-menu-td">
+            <button class="vertical-dot-menu">
+              <ul class="task-listing-vertical-menu">
+                <li class="task-listing-vertical-menu-list-item">Detail</li>
+                <li class="task-listing-vertical-menu-list-item">Result</li>
+                <li class="task-listing-vertical-menu-list-item">Add task</li>
+              </ul>
+            </button>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="show-container">
+          <div class="show-details">
+              <form action="#">
+                  <label class="show-label" for="show">Show</label>
+                  <select class="show-select-btn" name="show" id="cars">
+                  <option value="10">10</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="200">200</option>
+                  </select>
+              </form>
+              <span class="page-index">1-10 of 40</span>
+          </div>
+          <div>
+              <i class="fa-solid fa-chevron-left show-list-left"></i>
+              <h3 class="page-number active-page-number">1</h3>
+              <h3 class="page-number">2</h3>
+              <h3 class="page-number">3</h3>
+              <h3 class="page-number">4</h3>
+              <i class="fa-solid fa-chevron-right show-list-right"></i>
+          </div>
+     </div>
+              <!-- end of number scrubbing task listing -->
+  </div>
+  <!-- number mapping result detail starts -->
+  <div class="number-mapping-result-container number-mapping-detail-container">
+    <div class="number-maping-detail-head">
+      <a class="back-dashboard-btn summary-back-dashboard-btn" href="dashboard-subscribe.html">
+        <i class="fa-solid fa-chevron-left back-to-dashboard"></i>
+        Summary
+      </a>
+      <button type="button" class="upload-button m-0">Download</button>
+    </div>
+    <div class="summary-table">
+      <h1 class="summary-content">Total number count<span>10000</span></h1>
+      <h1 class="summary-content">Total numbers in DNC<span>9500</span></h1>
+      <h1 class="summary-content">
+        Total numbers in Spam List<span>250</span>
+      </h1>
+      <h1 class="summary-content">
+        Total numbers in Fraud List<span>200</span>
+      </h1>
+      <h1 class="summary-content">Total numbers in FTC<span>50</span></h1>
+    </div>
+    <div class="summary-btn-container">
+      <button class="summary-btn" onclick="stateDistributionPopup()">State Distribution</button>
+      <button class="summary-btn">Operator Distribution</button>
+      <button class="summary-btn">OP Type Distribution</button>
+      <button class="summary-btn" onclick="FraudDescription()">Fraud Distribution</button>
+    </div>
+  </div>
+  <!-- number mapping result detail ends -->
+  <!-- number mapping result starts -->
+  <div class="number-mapping-result-container" id="number-mapping-result-container">
+    <a class="back-dashboard-btn" href="dashboard-subscribe.html">
+      <i class="fa-solid fa-chevron-left back-to-dashboard"></i>
+      Number Mapping Result
+    </a>
+    <div class="number-mapping-result-head-container">
+      <h1 class="number-mapping-result-title">
+        Your Number File:<span class="number-mapping-result-detail"
+          >my_number.csv</span
+        >
+      </h1>
+      <h1 class="number-mapping-result-title">
+        Files to map:
+        <span class="number-mapping-result-detail"
+          ><span>State</span><span>LATA</span><span>Operator Name</span></span
+        >
+      </h1>
+      <h1 class="number-mapping-result-title">
+        Mapped Number File:
+        <span class="number-mapping-result-detail"
+          >my_number (mapped).csv</span
+        >
+      </h1>
+    </div>
+  </div>
+
+  <!-- number mapping result ends -->
+        </section>
+        <!-- end of number mapping -->
+
+        <section class="content-2 data-subscription-section">
+          <div class="data-sub-table-container">
+            <table class="data-subscription-table">
+              <thead>
+                <tr>
+                  <th>Data Type</th>
+                  <th>Subscription Expiry Date</th>
+                  <th>Subscription Expiry Date</th>
+                  <th>Download Key</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-column="Data type">DNC</td>
+                  <td data-column="Frequency">22-09-2022</td>
+                  <td data-column="Monthly Fee">01-01-2023</td>
+                  <td>Info Placeholder</td>
+                  <td><button class="subscribe-btn">Download</button></td>
+                </tr>
+                <tr>
+                  <td data-column="Data type">LRN</td>
+                  <td data-column="Frequency">22-09-2022</td>
+                  <td data-column="Monthly Fee">01-01-2023</td>
+                  <td>Info Placeholder</td>
+                  <td><button class="subscribe-btn">Download</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer margin-143">
+      <div class="footer-menu-start">
+        <div class="nav-brand">
+          <img src="img/white-logo.png" alt="" />
+          <h3 class="nav-title">TelcomData</h3>
+        </div>
+        <p class="footer-para">
+          Copyright © 2022 TelcomeData. <br />
+          All rights reserved. Terms of service
+        </p>
+      </div>
+      <div class="footer-menu-mid">
+        <div class="footer-sub-menu">
+          <h3 class="footer-menu-head">Services</h3>
+          <ul class="footer-menu-list">
+            <li>Number Scubbing</li>
+            <li>Number Mapping</li>
+            <li>Number Monitoring</li>
+            <li>Data Subscription</li>
+            <li>Number API</li>
+          </ul>
+        </div>
+        <div class="footer-sub-menu">
+          <h3 class="footer-menu-head">Menu</h3>
+          <ul class="footer-menu-list">
+            <li>Pricing</li>
+            <li>About Us</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-menu-end">
+        <h3 class="footer-menu-head">Get in Touch</h3>
+        <ul class="footer-menu-list">
+          <li>
+            <svg
+              class="footer-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99967 9.33333C9.47034 9.33333 10.6663 8.13733 10.6663 6.66667C10.6663 5.196 9.47034 4 7.99967 4C6.52901 4 5.33301 5.196 5.33301 6.66667C5.33301 8.13733 6.52901 9.33333 7.99967 9.33333ZM7.99967 5.33333C8.73501 5.33333 9.33301 5.93133 9.33301 6.66667C9.33301 7.402 8.73501 8 7.99967 8C7.26434 8 6.66634 7.402 6.66634 6.66667C6.66634 5.93133 7.26434 5.33333 7.99967 5.33333Z"
+                fill="#869593"
+              />
+              <path
+                d="M7.61372 14.5428C7.72655 14.6234 7.86173 14.6667 8.00038 14.6667C8.13903 14.6667 8.27422 14.6234 8.38705 14.5428C8.58972 14.3995 13.3531 10.9602 13.3337 6.66683C13.3337 3.72616 10.9411 1.3335 8.00038 1.3335C5.05972 1.3335 2.66705 3.72616 2.66705 6.6635C2.64772 10.9602 7.41105 14.3995 7.61372 14.5428ZM8.00038 2.66683C10.2064 2.66683 12.0004 4.46083 12.0004 6.67016C12.0144 9.62883 9.07505 12.2855 8.00038 13.1568C6.92638 12.2848 3.98638 9.6275 4.00038 6.66683C4.00038 4.46083 5.79438 2.66683 8.00038 2.66683Z"
+                fill="#869593"
+              />
+            </svg>
+
+            2715 Ash Dr. San Jose,<br />
+            South Dakota 83475
+          </li>
+          <li>
+            <svg
+              class="footer-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.8042 7.19514C10.7424 7.13318 10.6689 7.08402 10.588 7.05048C10.5072 7.01694 10.4205 6.99967 10.3329 6.99967C10.2453 6.99967 10.1587 7.01694 10.0778 7.05048C9.9969 7.08402 9.92343 7.13318 9.86157 7.19514L8.7989 8.25781C8.30624 8.11114 7.3869 7.77781 6.80424 7.19514C6.22157 6.61247 5.88824 5.69314 5.74157 5.20047L6.80424 4.13781C6.8662 4.07595 6.91536 4.00248 6.9489 3.9216C6.98244 3.84073 6.99971 3.75403 6.99971 3.66648C6.99971 3.57892 6.98244 3.49222 6.9489 3.41135C6.91536 3.33047 6.8662 3.257 6.80424 3.19514L4.13757 0.528475C4.07571 0.466511 4.00224 0.417353 3.92137 0.383812C3.84049 0.350272 3.75379 0.333008 3.66624 0.333008C3.57868 0.333008 3.49199 0.350272 3.41111 0.383812C3.33023 0.417353 3.25676 0.466511 3.1949 0.528475L1.3869 2.33648C1.13357 2.58981 0.990905 2.93781 0.996238 3.29314C1.01157 4.24248 1.2629 7.53981 3.86157 10.1385C6.46024 12.7371 9.75757 12.9878 10.7076 13.0038H10.7262C11.0782 13.0038 11.4109 12.8651 11.6629 12.6131L13.4709 10.8051C13.5329 10.7433 13.582 10.6698 13.6156 10.5889C13.6491 10.5081 13.6664 10.4214 13.6664 10.3338C13.6664 10.2463 13.6491 10.1596 13.6156 10.0787C13.582 9.9978 13.5329 9.92433 13.4709 9.86248L10.8042 7.19514ZM10.7196 11.6698C9.88757 11.6558 7.0409 11.4325 4.80424 9.19514C2.56024 6.95114 2.3429 4.09448 2.32957 3.27914L3.66624 1.94248L5.39024 3.66648L4.52824 4.52848C4.44988 4.60678 4.39227 4.70337 4.36061 4.80952C4.32895 4.91567 4.32424 5.02804 4.3469 5.13648C4.3629 5.21314 4.75424 7.03114 5.8609 8.13781C6.96757 9.24447 8.78557 9.63581 8.86224 9.65181C8.9706 9.67511 9.08309 9.67078 9.18934 9.63921C9.29559 9.60764 9.39219 9.54984 9.47024 9.47114L10.3329 8.60914L12.0569 10.3331L10.7196 11.6698Z"
+                fill="#869593"
+              />
+            </svg>
+            (684) 555-0102
+          </li>
+          <li>
+            <svg
+              class="footer-icon"
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.333 0.666504H1.66634C0.931008 0.666504 0.333008 1.2645 0.333008 1.99984V9.99984C0.333008 10.7352 0.931008 11.3332 1.66634 11.3332H12.333C13.0683 11.3332 13.6663 10.7352 13.6663 9.99984V1.99984C13.6663 1.2645 13.0683 0.666504 12.333 0.666504ZM12.333 1.99984V2.3405L6.99967 6.48917L1.66634 2.34117V1.99984H12.333ZM1.66634 9.99984V4.02917L6.59034 7.85917C6.70708 7.95087 6.85123 8.00071 6.99967 8.00071C7.14812 8.00071 7.29227 7.95087 7.40901 7.85917L12.333 4.02917L12.3343 9.99984H1.66634Z"
+                fill="#869593"
+              />
+            </svg>
+
+            support@telcomdata.com
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/dropdown.js"></script>
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
