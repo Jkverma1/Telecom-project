@@ -117,7 +117,8 @@ body {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.login-btn {
+.login-btn,
+.login-btn-index {
   position: absolute;
   top: -12px;
   right: 10%;
@@ -784,9 +785,20 @@ button {
 .tags-input-wrapper {
   background: transparent;
   max-width: 400px;
+  width: 368px;
+  height: 20px;
   border: 1px solid #e7e7e7;
-  padding: 16px 0;
+  padding: 16px 0 18px;
 }
+
+.tags-input-wrapper {
+  padding: 14px 0 38px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
 .tags-add-label {
   /* H8 | Caption */
 
@@ -913,7 +925,8 @@ button {
 }
 
 .number-checker-input-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   flex-wrap: wrap;
   column-gap: 16px;
   vertical-align: middle;
@@ -981,6 +994,7 @@ button {
 }
 
 .number-detail-head {
+  margin: 0;
   padding: 16px 24px;
   font-family: "IBM Plex Mono";
   font-style: normal;
@@ -1132,6 +1146,9 @@ textarea::placeholder {
   text-align: center;
   padding: 8px 9px;
 }
+.contact-container-index {
+  margin-top: 204px;
+}
 
 .social-link-container i {
   height: 18px;
@@ -1192,6 +1209,74 @@ textarea::placeholder {
   padding: 48px 0;
 }
 
+.include-exclude {
+  margin-top: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.include-exclude-top-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 12px;
+}
+
+.include-exclude-select-tag-container {
+  display: flex;
+  column-gap: 24px;
+}
+.include-exclude-select-tag-container div {
+  width: 120px;
+  text-align: left;
+}
+
+.include-exclude-keyword-container {
+  text-align: left;
+}
+
+.include-exclude-select-label {
+  /* H8 | Caption */
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  /* Text 1 */
+
+  color: #011312;
+}
+
+.include-exclude-select-tag,
+.state-select-tag {
+  /* H7 | Body 2 */
+  margin-top: 8px;
+  background-color: transparent;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "rclt" off;
+
+  /* text 2 */
+  border: 1px solid #e7e7e7;
+  padding: 16px 8px;
+  color: #3e4b4b;
+  width: 104px;
+}
+.sec-lata {
+  display: none;
+}
+
 @media screen and (max-width: 1170px) {
   .service-feature {
     grid-template-columns: auto auto;
@@ -1208,6 +1293,26 @@ textarea::placeholder {
   .banner-text-container {
     top: 144px;
   }
+
+  .include-exclude-top-container {
+    grid-template-columns: auto;
+  }
+  .include-exclude-keyword-container {
+    margin-top: 0;
+  }
+
+  .tags-input-wrapper {
+    margin-top: 8px;
+    width: 290px;
+  }
+
+  .sec-lata {
+    display: unset;
+  }
+  .h-8 {
+    height: 8px;
+  }
+
   .row-6-6 {
     margin-top: 24px;
   }
@@ -1250,6 +1355,15 @@ textarea::placeholder {
   }
 }
 @media screen and (max-width: 962px) {
+  .include-exclude-select-tag-container div {
+    width: 133px;
+  }
+
+  .include-exclude-select-tag,
+  .state-select-tag {
+    width: 132px;
+  }
+
   .nav div.logo {
     float: left;
     padding-left: 39px;
@@ -1270,7 +1384,8 @@ textarea::placeholder {
 
     color: #ffffff;
   }
-  .login-btn {
+  .login-btn,
+  .login-btn-index {
     position: absolute;
     top: -12px;
     right: 21.8px;
@@ -1299,6 +1414,9 @@ textarea::placeholder {
   }
   .nav div.logo {
     margin-left: 0px;
+  }
+  .contact-container-index {
+    margin-top: 96px;
   }
 }
 
@@ -1365,12 +1483,31 @@ textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 690px) {
+  .number-checker-input-container {
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 16px;
+    vertical-align: middle;
+    align-items: center;
+  }
+  .number-checker-input {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 612px) {
   .footer {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
     row-gap: 32px;
+  }
+  .contact-container-index {
+    margin-top: 46px;
   }
   .banner-head {
     font-family: "M PLUS 1";
@@ -1510,5 +1647,8 @@ textarea::placeholder {
   .w-100 {
     height: 521px;
     width: auto;
+  }
+  .number-detail-head {
+    font-size: 14px;
   }
 }

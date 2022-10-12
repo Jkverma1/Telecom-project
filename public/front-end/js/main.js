@@ -1,11 +1,24 @@
 $(".navTrigger").click(function () {
   $(this).toggleClass("active");
-  console.log("Clicked menu");
   $("#mainListDiv").toggleClass("show_list");
   $("#mainListDiv").fadeIn();
 });
 
-(function () {
+function showMenu() {
+  $(this).toggleClass("active");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+}
+
+function serviceItems() {
+  if ($("#service-items").css("display") == "none") {
+    document.getElementById("service-items").style.display = "flex";
+  } else {
+    document.getElementById("service-items").style.display = "none";
+  }
+}
+
+(function sdsfd() {
   "use strict";
 
   // Plugin Constructor
@@ -174,8 +187,32 @@ var tagInput2 = new TagsInput({
   duplicate: false,
   max: 10,
 });
-tagInput1.addData(["Richmond", "Westlake"]);
+var tagInput3 = new TagsInput({
+  selector: "tag-input3",
+  duplicate: false,
+  max: 10,
+});
+var tagInput4 = new TagsInput({
+  selector: "tag-input4",
+  duplicate: false,
+  max: 10,
+});
+var tagInput5 = new TagsInput({
+  selector: "tag-input5",
+  duplicate: false,
+  max: 10,
+});
+var tagInput6 = new TagsInput({
+  selector: "tag-input6",
+  duplicate: false,
+  max: 10,
+});
 tagInput2.addData(["Richmond", "Westlake"]);
+tagInput1.addData(["all"]);
+tagInput3.addData(["Richmond", "Westlake"]);
+tagInput4.addData(["Richmond", "Westlake"]);
+tagInput5.addData(["Richmond", "Westlake"]);
+tagInput6.addData(["Richmond", "Westlake"]);
 
 $(document).ready(function () {
   //DropDown input - select
@@ -226,11 +263,3 @@ $(document).on("click", ".map-point-sm", function () {
   var show = $(this).data("show");
   $(show).removeClass("hide").siblings().addClass("hide");
 });
-
-function serviceItems() {
-  if ($("#service-items").css("display") == "none") {
-    document.getElementById("service-items").style.display = "flex";
-  } else {
-    document.getElementById("service-items").style.display = "none";
-  }
-}

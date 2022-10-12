@@ -38,13 +38,16 @@
           <li><a href="/front-end/api-key.html">API</a></li>
           <li><a href="/front-end/contact-us.html">Contact</a></li>
           <li id="login-container">
-            <a class="login-btn" id="login-btn" href="/front-end/signin.html"
+            <a
+              class="login-btn-index"
+              id="login-btn"
+              href="/front-end/signin.html"
               >Log In</a
             >
           </li>
         </ul>
       </div>
-      <span class="navTrigger">
+      <span class="navTrigger" onclick="showMenu()">
         <i></i>
         <i></i>
         <i></i>
@@ -284,7 +287,69 @@
           <label for="Select-field" class="select-field-head"
             >Inclusion Criteria</label
           >
-          <div class="include-exclude"></div>
+          <div class="include-exclude">
+            <div class="include-exclude-top-container">
+              <div class="include-exclude-select-tag-container">
+                <div>
+                  <label class="include-exclude-select-label" for="cars"
+                    >Include / Exclude</label
+                  >
+                  <select class="include-exclude-select-tag" name="" id="">
+                    <option value="">Include</option>
+                    <option value="">Exclude</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="include-exclude-select-label" for="cars"
+                    >State</label
+                  >
+                  <input
+                    class="state-select-tag"
+                    type="text"
+                    placeholder="California"
+                    value="California"
+                  />
+                </div>
+              </div>
+              <div class="include-exclude-keyword-container">
+                <h2 class="include-exclude-select-label mb-8">LATA</h2>
+                <div class="tags-input-wrapper">
+                  <span class="tag">Richmond<a>×</a></span
+                  ><span class="tag">Westlake<a>×</a></span
+                  ><input />
+                </div>
+              </div>
+            </div>
+            <div class="include-exclude-top-container">
+              <div
+                class="include-exclude-select-tag-container"
+                style="margin-top: 8px"
+              >
+                <div>
+                  <select class="include-exclude-select-tag" name="" id="">
+                    <option value="">Exclude</option>
+                    <option value="">Include</option>
+                  </select>
+                </div>
+                <div>
+                  <input
+                    class="state-select-tag"
+                    type="text"
+                    placeholder="California"
+                    value="Florida"
+                  />
+                </div>
+              </div>
+              <div class="mt-16 include-exclude-keyword-container">
+                <h2 class="include-exclude-select-label sec-lata mb-8">LATA</h2>
+                <div class="tags-input-wrapper">
+                  <span class="tag">all<a>×</a></span
+                  ><input />
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
         </div>
         <div class="checkbox-grid2">
           <div class="checkBox">
@@ -323,11 +388,19 @@
         <div class="row-6-6">
           <div>
             <h2 class="tags-add-label">Include Operators</h2>
-            <input type="text" id="tag-input1" />
+            <div class="tags-input-wrapper">
+              <span class="tag">Richmond<a>×</a></span
+              ><span class="tag">Westlake<a>×</a></span
+              ><input />
+            </div>
           </div>
           <div>
             <h2 class="tags-add-label">Exclude Operators</h2>
-            <input type="text" id="tag-input2" />
+            <div class="tags-input-wrapper">
+              <span class="tag">Richmond<a>×</a></span
+              ><span class="tag">Westlake<a>×</a></span
+              ><input />
+            </div>
           </div>
         </div>
         <div></div>
@@ -543,7 +616,7 @@
       </div>
     </form>
   </section>
-  <footer class="footer">
+  <footer class="footer contact-container-index">
     <div class="footer-menu-start">
       <div class="nav-brand">
         <img src="front-end/img/white-logo.png" alt="" />
@@ -557,7 +630,9 @@
         <a href="https://twitter.com/telcomdata1"
           ><i class="fa-brands fa-twitter"></i
         ></a>
-        <a href="https://www.linkedin.com/company/telcomdata"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/company/telcomdata"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
       </div>
       <p class="footer-para">
         Copyright © 2022 TelcomeData. <br />
@@ -606,8 +681,8 @@
             />
           </svg>
 
-          2715 Ash Dr. San Jose,<br />
-          South Dakota 83475
+          3524 Silverside Road Suite 35B,<br />
+          Wilmington, Delaware, 19810
         </li>
         <li>
           <svg
@@ -623,7 +698,7 @@
               fill="#869593"
             />
           </svg>
-          (684) 555-0102
+          +1-484-424-9683
         </li>
         <li>
           <svg

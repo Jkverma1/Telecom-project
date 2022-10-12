@@ -29,6 +29,16 @@
     <link rel="stylesheet" href="fonts/fontawesome-free/css/all.css" />
   </head>
   <body>
+    <style>
+      .tags-input-wrapper {
+  background: transparent;
+  max-width: 400px;
+  width: 368px;
+  height: 20px;
+  border: 1px solid #e7e7e7;
+  padding: 16px 0 18px;
+}
+    </style>
     <nav class="nav">
       <div class="container">
         <div class="logo">
@@ -265,8 +275,12 @@
       </form>
     </section>
     <!-- number scrubbing -->
-    <section class="number-mapping">
-      <img src="img/Line 30.png" alt="" />
+    <!-- number scrubbing -->
+    <section class="number-mapping m-143">
+      <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.5 14V4C16.5 1.832 12.837 0 8.5 0C4.163 0 0.5 1.832 0.5 4V14C0.5 16.168 4.163 18 8.5 18C12.837 18 16.5 16.168 16.5 14ZM8.5 2C12.191 2 14.431 3.507 14.5 3.994C14.431 4.493 12.191 6 8.5 6C4.809 6 2.569 4.493 2.5 4.006C2.569 3.507 4.809 2 8.5 2ZM2.5 6.607C3.979 7.454 6.137 8 8.5 8C10.863 8 13.021 7.454 14.5 6.607V8.994C14.431 9.493 12.191 11 8.5 11C4.809 11 2.569 9.493 2.5 9V6.607ZM2.5 14V11.607C3.979 12.454 6.137 13 8.5 13C10.863 13 13.021 12.454 14.5 11.607V13.994C14.431 14.493 12.191 16 8.5 16C4.809 16 2.569 14.493 2.5 14Z" fill="#008F7D"/>
+        </svg>
+        
       <h1 class="Service-head">Number Scrubbing</h1>
       <h5 class="sub-head">Trial version</h5>
       <p class="service-sub-para">
@@ -288,7 +302,47 @@
           <div class="text-center checkbox-container">
             <label for="Select-field" class="select-field-head">Inclusion Criteria</label>
               <div class="include-exclude">
-                
+                <div class="include-exclude-top-container">
+                  
+                  <div class="include-exclude-select-tag-container">
+                    <div>
+                      <label class="include-exclude-select-label" for="cars">Include / Exclude</label>
+                      <select class="include-exclude-select-tag" name="" id="">
+                        <option value="">Include</option>
+                        <option value="">Exclude</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="include-exclude-select-label" for="cars">State</label>
+                      <input class="state-select-tag" type="text" placeholder="California" value="California">
+                    </div>
+                  </div>
+                  <div class="include-exclude-keyword-container">
+                    <h2 class="include-exclude-select-label mb-8">LATA</h2>
+                    <input type="text" id="tag-input2">
+                  </div>
+                </div>
+                <div class="include-exclude-top-container">
+                  
+                  <div class="include-exclude-select-tag-container" style="margin-top: 8px;">
+                    <div>
+                      <select class="include-exclude-select-tag" name="" id="">
+                        <option value="">Exclude</option>
+                        <option value="">Include</option>
+                      </select>
+                    </div>
+                    <div>
+                      <input class="state-select-tag" type="text" placeholder="California" value="Florida">
+                    </div>
+                  </div>
+                  <div class="mt-16 include-exclude-keyword-container ">
+                    <h2 class="include-exclude-select-label sec-lata mb-8">LATA</h2>
+                      <input type="text" id="tag-input1">
+                  </div>
+                </div>
+                <div>
+
+                </div>
               </div>
             </div>
             <div class="checkbox-grid2">
@@ -328,11 +382,11 @@
             <div class="row-6-6">
               <div>
                 <h2 class="tags-add-label">Include Operators</h2>
-  <input type="text" id="tag-input1">
+                <input type="text" id="tag-input3">
               </div>
               <div>
                 <h2 class="tags-add-label">Exclude Operators</h2>
-  <input type="text" id="tag-input2">
+                <input type="text" id="tag-input4">
               </div>
             </div>
             <div>
@@ -504,8 +558,7 @@
               />
             </svg>
   
-            2715 Ash Dr. San Jose,<br />
-            South Dakota 83475
+            3524 Silverside Road Suite 35B,<br> Wilmington, Delaware, 19810
           </li>
           <li>
             <svg
@@ -521,7 +574,7 @@
                 fill="#869593"
               />
             </svg>
-            (684) 555-0102
+            +1-484-424-9683
           </li>
           <li>
             <svg
