@@ -69,7 +69,7 @@ a.active svg path {
 }
 .th-container2 th {
   background-color: #718380;
-  width: 40%;
+  width: 50%;
 }
 
 .subscribe-btn-td {
@@ -643,11 +643,73 @@ section.active {
 
   color: #a0a7a7;
 }
+.extended-btn-td {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-div {
+  display: none;
+  top: 30px;
+}
+
+.display-unset {
+  display: unset;
+}
+
+.keyword-box-down-icon {
+  float: right;
+  margin-top: 8px;
+  font-size: 7px;
+  margin-right: 12px;
+}
+
+.include-exclude-options-wrap {
+  background: #f0eff0;
+  border-radius: 100px;
+  width: 95px;
+  height: 22px;
+}
+
+.cross-mark-label {
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "rclt" off;
+
+  /* text 2 */
+
+  color: #3e4b4b;
+  display: none;
+}
+
+.cross-container {
+  text-align: left;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .cross-mark-label {
+    display: unset;
+  }
+  .cross-container {
+    margin-top: 8px;
+  }
+}
+
+.Cross-mark {
+  margin-left: 12.5px;
+}
 
 @media screen and (max-width: 600px) {
   .logout-popup-head {
     /* H3 | Subtitle */
-    margin: 32px 48px 0;
+    margin: 16px 16px 0;
+    font-size: 24px;
   }
   .logout-popup-btn-container {
     margin: 16px;
@@ -655,6 +717,9 @@ section.active {
 }
 
 @media screen and (max-width: 601px) {
+  .extend-date-popup {
+    width: 290px;
+  }
   .content-1,
   .content-2 {
     width: inherit;

@@ -4,12 +4,13 @@ function changeLanguage(language) {
   element.innerHTML = language;
 }
 
-function showDropdown() {
-  openDropdown = document.querySelector(".dropdown-div");
-  if ((openDropdown.style.display = "none")) {
-    openDropdown.style.display = "unset";
+$(".extended-btn-td").click(function () {
+  if ($(this).find(".dropdown-div").hasClass(".display-unset")) {
+    $(this).find(".dropdown-div").removeClass(".display-unset");
+  } else {
+    $(this).find(".dropdown-div").addClass(".display-unset");
   }
-}
+});
 
 // popup btn
 function logoutbtn() {
@@ -178,16 +179,14 @@ function closestateDistributionPopup() {
 }
 
 function FraudDescription() {
-  document.querySelector(".fraud-description-popup").style.display =
-    "unset";
+  document.querySelector(".fraud-description-popup").style.display = "unset";
   document.querySelector(
     ".state-distribution-background-overlay-popup"
   ).style.display = "unset";
 }
 
 function closeFraudDescription() {
-  document.querySelector(".fraud-description-popup").style.display =
-    "none";
+  document.querySelector(".fraud-description-popup").style.display = "none";
   document.querySelector(
     ".state-distribution-background-overlay-popup"
   ).style.display = "none";

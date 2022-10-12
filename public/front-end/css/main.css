@@ -126,7 +126,8 @@ body {
   border: 1px solid #ffffff;
 }
 
-.affix {
+.affix,
+.taffix {
   margin: 0;
   padding: 20px 0;
   background: #011312;
@@ -142,11 +143,11 @@ body {
 .navTrigger {
   cursor: pointer;
   width: 30px;
-  margin: auto;
   position: absolute;
   right: 30px;
   top: 0;
   bottom: 0;
+  background: transparent;
 }
 
 .navTrigger i {
@@ -789,10 +790,8 @@ button {
   height: 20px;
   border: 1px solid #e7e7e7;
   padding: 16px 0 18px;
-}
-
-.tags-input-wrapper {
-  padding: 14px 0 38px;
+  vertical-align: middle;
+  align-items: center;
 }
 
 .mt-16 {
@@ -1219,7 +1218,9 @@ textarea::placeholder {
 
 .include-exclude-top-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
+  vertical-align: middle;
+  align-items: center;
   justify-content: center;
   column-gap: 24px;
   row-gap: 12px;
@@ -1297,6 +1298,10 @@ textarea::placeholder {
   .include-exclude-top-container {
     grid-template-columns: auto;
   }
+  .cross-mark-label {
+    display: unset;
+  }
+
   .include-exclude-keyword-container {
     margin-top: 0;
   }
@@ -1407,7 +1412,7 @@ textarea::placeholder {
     text-transform: capitalize;
 
     color: #ffffff;
-    padding: 20px 0;
+    padding: 0;
   }
   .nav div.main_list {
     padding: 0 39px;
@@ -1438,7 +1443,7 @@ textarea::placeholder {
   .nav div.show_list {
     height: auto;
     display: none;
-    background: #011212;
+    background-image: url(../img/homepage-banner.png);
   }
   .nav div.main_list ul {
     flex-direction: column;
@@ -1463,7 +1468,7 @@ textarea::placeholder {
     text-transform: capitalize;
 
     color: #ffffff;
-    padding: 48px 0;
+    padding: 0;
   }
   #service-items {
     right: 20px;
@@ -1484,6 +1489,9 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 690px) {
+  .nav div.main_list ul li a {
+    padding: 0;
+  }
   .number-checker-input-container {
     text-align: left;
     display: grid;

@@ -1,4 +1,3 @@
-
 $(".button").first().addClass("active");
 
 $(".button").click(function () {
@@ -13,10 +12,23 @@ $(".button").click(function () {
 
 // + "task-listing-vertical-menu"
 $(".vertical-dot-menu").click(function () {
-  if($(this).find(".task-listing-vertical-menu").hasClass( "active-vertical-menu" )){
-    $(this).find(".task-listing-vertical-menu").removeClass("active-vertical-menu");
+  if (
+    $(this).find(".task-listing-vertical-menu").hasClass("active-vertical-menu")
+  ) {
+    $(this)
+      .find(".task-listing-vertical-menu")
+      .removeClass("active-vertical-menu");
+  } else {
+    $(this)
+      .find(".task-listing-vertical-menu")
+      .addClass("active-vertical-menu");
   }
-  else{
-    $(this).find(".task-listing-vertical-menu").addClass("active-vertical-menu");
+});
+
+$(".extended-btn-td").click(function () {
+  if ($(this).find(".dropdown-div").hasClass("display-unset")) {
+    $(this).find(".dropdown-div").removeClass("display-unset");
+  } else {
+    $(this).find(".dropdown-div").addClass("display-unset");
   }
 });
