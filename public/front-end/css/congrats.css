@@ -8,7 +8,7 @@
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 32px;
   line-height: 40px;
   /* identical to box height, or 125% */
@@ -24,7 +24,7 @@
   margin-top: 16px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   /* identical to box height, or 133% */
@@ -71,7 +71,7 @@
   margin-top: 64px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   /* or 143% */
@@ -118,14 +118,13 @@
   display: grid;
   grid-template-columns: auto 370px;
   justify-content: space-around;
-  column-gap: 120px;
 }
 
 .contact-info-details {
   order: 1;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   /* or 143% */

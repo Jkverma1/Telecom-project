@@ -9,7 +9,7 @@
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 32px;
   line-height: 40px;
   /* identical to box height, or 125% */
@@ -22,7 +22,7 @@
 .about-us-para {
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   width: 652px;

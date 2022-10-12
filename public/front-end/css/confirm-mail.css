@@ -39,7 +39,7 @@ body {
   margin: 1.61%;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -81,7 +81,7 @@ body {
   margin-top: 100.5px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 32px;
   line-height: 40px;
 
@@ -95,7 +95,7 @@ body {
   margin-top: 24px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   font-feature-settings: "rclt" off;
@@ -152,7 +152,7 @@ body {
   display: none;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #eb5757;
@@ -179,7 +179,7 @@ body {
   margin-top: 32px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 32px;
   line-height: 40px;
   text-align: center;

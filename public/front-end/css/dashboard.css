@@ -138,7 +138,7 @@ section.active {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   margin: 50px 0 18px;
   font-size: 24px;
   line-height: 28px;
@@ -601,7 +601,7 @@ section.active {
   margin-top: 72px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
@@ -753,7 +753,7 @@ section.active {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 32px;
   line-height: 40px;
   /* identical to box height, or 125% */
@@ -807,7 +807,7 @@ td {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   padding: 25px 12px;

@@ -125,123 +125,14 @@ body {
   border: 1px solid #ffffff;
 }
 
-.affix,
-.affix-x {
+.affix {
   margin: 0;
   padding: 20px 0;
   background: #011312;
 }
 
-.topfix,
-.topfix-x {
+.topfix {
   top: 12px;
-}
-
-/* Media qurey section */
-
-@media screen and (min-width: 860px) and (max-width: 1024px) {
-  .container {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 962px) {
-  .nav div.logo {
-    float: left;
-    padding-left: 39px;
-  }
-  .login-btn {
-    position: absolute;
-    top: -12px;
-    right: 21.8px;
-  }
-  .w-100 {
-    height: 649px;
-    width: auto;
-  }
-  .home {
-    max-height: fit-content;
-  }
-  .nav div.main_list ul li a {
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    text-transform: capitalize;
-
-    color: #ffffff;
-    padding: 20px 0;
-  }
-  .nav div.main_list {
-    padding: 0 39px;
-  }
-  .nav div.logo {
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 860px) {
-  .navTrigger {
-    display: block;
-  }
-  .nav div.logo {
-    margin-left: 0px;
-  }
-  .nav div.main_list ul li {
-    padding: 24px 0 0;
-  }
-  .nav div.main_list {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  .nav div.show_list {
-    height: auto;
-    display: none;
-    background: #011212;
-  }
-  .nav div.main_list ul {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: transparent;
-  }
-  .nav div.main_list ul li {
-    width: 100%;
-    text-align: left;
-  }
-  .nav div.main_list ul li a {
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    text-transform: capitalize;
-
-    color: #ffffff;
-    padding: 48px 0;
-  }
-  #service-items {
-    right: 20px;
-    left: unset;
-  }
-
-  .nav div.media_button {
-    display: block;
-  }
-  #login-btn {
-    margin-top: 32px;
-    position: static;
-    padding: 12px 64px;
-  }
-  #login-container {
-    padding: 40px 0;
-  }
 }
 
 /* Animation */
@@ -468,10 +359,10 @@ body {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  /* or 114% */
+  font-weight: 200;
+  font-size: 92px;
+  line-height: 120%;
+  /* or 110px */
 
   text-align: center;
 
@@ -558,7 +449,7 @@ body {
   display: inline-block;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   font-feature-settings: "rclt" off;
@@ -574,16 +465,17 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 180%;
-  width: 237px;
+  width: 290px;
   color: #3e4b4b;
 }
 
 .try-for-free-btn {
   margin: 48px 0px 0px 32px;
+  height: 55px;
   border: 1px solid #008f7d;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   text-align: center;
@@ -627,7 +519,7 @@ body {
   margin-top: 48px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height, or 125% */
@@ -686,7 +578,7 @@ body {
   margin-top: 10px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   /* identical to box height, or 138% */
@@ -769,7 +661,7 @@ body {
 .select-field-head {
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   font-feature-settings: "rclt" off;
@@ -792,7 +684,7 @@ body {
 .checkBox {
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
@@ -802,6 +694,14 @@ body {
   /* Text 1 */
 
   color: #011312;
+}
+
+.mt-56-5 {
+  margin-top: 56.5px;
+}
+
+.checkBox label {
+  margin-left: 5px;
 }
 
 .checkBox input:checked {
@@ -892,7 +792,7 @@ button {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 8px;
   font-size: 12px;
   line-height: 16px;
@@ -916,7 +816,7 @@ button {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
@@ -946,7 +846,7 @@ button {
   /* H8 | Caption */
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   /* identical to box height, or 133% */
@@ -1023,7 +923,7 @@ button {
 .number-checker-label {
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height, or 125% */
@@ -1135,7 +1035,7 @@ button {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
@@ -1163,7 +1063,7 @@ textarea::placeholder {
 
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
@@ -1203,15 +1103,41 @@ textarea::placeholder {
   padding-left: 135px;
 }
 
-.footer-para {
+.footer-para,
+.footer-para-mobile {
   font-family: "M PLUS 1";
   font-style: normal;
-  margin-top: 105px;
-  font-weight: 600;
+  margin-top: 60px;
+  font-weight: 400;
   font-size: 10px;
   line-height: 16px;
   font-feature-settings: "rclt" off;
   color: #e0e0e0;
+}
+
+.footer-para-mobile {
+  margin-top: 8px;
+  display: none;
+}
+
+.social-link-container {
+  margin-top: 8px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.social-link-container a {
+  border-radius: 50%;
+  border: 1px solid #869593;
+  text-align: center;
+  padding: 8px 9px;
+}
+
+.social-link-container i {
+  height: 18px;
+  width: 18px;
+  font-size: 16px;
+  color: #869593;
 }
 
 .footer-menu-mid {
@@ -1244,7 +1170,7 @@ textarea::placeholder {
 .footer-menu-list li {
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: capitalize;
@@ -1297,11 +1223,145 @@ textarea::placeholder {
     row-gap: 30px;
     width: 100%;
   }
+  .service-para {
+    margin-top: 56px;
+    margin-left: 32px;
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    width: 284px;
+    color: #3e4b4b;
+  }
   .service-type {
     width: 333px;
   }
   .form-container {
     padding: 0 39px;
+  }
+}
+
+/* Media qurey section */
+
+@media screen and (min-width: 860px) and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 962px) {
+  .nav div.logo {
+    float: left;
+    padding-left: 39px;
+  }
+  .banner-head {
+    /* H2 | Title */
+
+    /* H2 | Title */
+
+    font-family: "M PLUS 1";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+    /* or 114% */
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .login-btn {
+    position: absolute;
+    top: -12px;
+    right: 21.8px;
+  }
+  .w-100 {
+    height: 649px;
+    width: auto;
+  }
+  .home {
+    max-height: fit-content;
+  }
+  .nav div.main_list ul li a {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  .nav div.main_list {
+    padding: 0 39px;
+  }
+  .nav div.logo {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .navTrigger {
+    display: block;
+  }
+  .nav div.logo {
+    margin-left: 0px;
+  }
+  .nav div.main_list ul li {
+    padding: 24px 0 0;
+  }
+  .nav div.main_list {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .nav div.show_list {
+    height: auto;
+    display: none;
+    background: #011212;
+  }
+  .nav div.main_list ul {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+  }
+  .nav div.main_list ul li {
+    width: 100%;
+    text-align: left;
+  }
+  .nav div.main_list ul li a {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #ffffff;
+    padding: 48px 0;
+  }
+  #service-items {
+    right: 20px;
+    left: unset;
+  }
+
+  .nav div.media_button {
+    display: block;
+  }
+  #login-btn {
+    margin-top: 32px;
+    position: static;
+    padding: 12px 64px;
+  }
+  #login-container {
+    padding: 40px 0;
   }
 }
 
@@ -1311,6 +1371,18 @@ textarea::placeholder {
     grid-template-columns: auto;
     justify-content: center;
     row-gap: 32px;
+  }
+  .banner-head {
+    font-family: "M PLUS 1";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    /* or 117% */
+
+    text-align: center;
+
+    color: #ffffff;
   }
   .footer-menu-mid {
     column-gap: 48px;
@@ -1322,6 +1394,10 @@ textarea::placeholder {
 
   .footer-para {
     display: none;
+  }
+  .footer-para-mobile {
+    margin-top: 8px;
+    display: unset;
   }
   .banner-sub-head {
     font-family: "M PLUS 1";
@@ -1362,6 +1438,9 @@ textarea::placeholder {
   .service-feature {
     grid-template-columns: auto;
   }
+  .service-para {
+    width: 240px;
+  }
   .service-type {
     width: 290px;
   }
@@ -1398,6 +1477,7 @@ textarea::placeholder {
   }
 
   .banner-para {
+    margin-top: 32px;
     font-family: "M PLUS 1";
     font-style: normal;
     font-weight: 400;

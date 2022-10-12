@@ -16,15 +16,25 @@
               >Services <i class="fa-solid fa-chevron-down service-down"></i
             ></a>
             <ul id="service-items">
-              <li><a href="number-mapping.html">Number Mapping</a></li>
-              <li><a href="number-scrubbing.html">Number Scrubbing</a></li>
+              <li>
+                <a href="front-end/number-mapping.html">Number Mapping</a>
+              </li>
+              <li>
+                <a href="front-end/number-scrubbing.html">Number Scrubbing</a>
+              </li>
               <li><a href="#">Number Monitoring</a></li>
-              <li><a href="#">Data Subscription</a></li>
+              <li>
+                <a href="front-end/data-subscription.html">Data Subscription</a>
+              </li>
               <li><a href="#">Number API </a></li>
             </ul>
           </li>
           <li><a href="/front-end/pricing.html">Pricing</a></li>
-          <li><a href="/"><router-link to="/pages/about">About Us</router-link></a></li>
+          <li>
+            <a href="/"
+              ><router-link to="/pages/about">About Us</router-link></a
+            >
+          </li>
           <li><a href="/front-end/api-key.html">API</a></li>
           <li><a href="/front-end/contact-us.html">Contact</a></li>
           <li id="login-container">
@@ -52,7 +62,12 @@
       protect <br />
       your business environment from devastating fines and damage to your brand.
     </p>
-    <button class="free-trial-btn">Free trial</button>
+    <button
+      class="free-trial-btn"
+      onclick="location.href='front-end/signin.html'"
+    >
+      Free trial
+    </button>
   </div>
 
   <section class="home">
@@ -190,12 +205,11 @@
               ><span class="browse-files">
                 Click to <input type="file" class="default-file-input" />
                 <span class="browse-files-text">browse</span>
-                <span>or drag & drop</span>
+                <span> or drag & drop</span>
               </span>
             </label>
           </span>
         </div>
-
         <div class="text-center checkbox-container">
           <label for="Select-field" class="select-field-head"
             >Select fields</label
@@ -317,7 +331,13 @@
           </div>
         </div>
         <div></div>
-        <button type="button" class="upload-button">Submit</button>
+        <button
+          type="button"
+          class="upload-button"
+          onclick="confirmPaymentTask()"
+        >
+          Submit
+        </button>
       </div>
     </form>
   </section>
@@ -332,7 +352,7 @@
       related to the number
     </p>
 
-    <div class="number-checker-container">
+    <div class="number-checker-container" style="margin-top: 56.5px">
       <form class="number-checker-input-container" action="">
         <label class="number-checker-label" for="number-check"
           >Enter a Number</label
@@ -512,7 +532,7 @@
         placeholder="Enter phone number"
       />
 
-      <label for="message">Last Name</label>
+      <label for="message">Message</label>
       <textarea
         name="text"
         rows="3"
@@ -528,6 +548,16 @@
       <div class="nav-brand">
         <img src="front-end/img/white-logo.png" alt="" />
         <h3 class="nav-title">TelcomData</h3>
+      </div>
+      <div class="social-link-container">
+        <a
+          href="https://www.facebook.com/TelcomDataus-One-Stop-Shop-for-US-LERG-LRN-DNC-Data-161148389027028"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/telcomdata1"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com/company/telcomdata"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
       <p class="footer-para">
         Copyright © 2022 TelcomeData. <br />
@@ -612,6 +642,10 @@
 
           support@telcomdata.com
         </li>
+        <p class="footer-para-mobile">
+          Copyright © 2022 TelcomeData. <br />
+          All rights reserved. Terms of service
+        </p>
       </ul>
     </div>
   </footer>

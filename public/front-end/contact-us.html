@@ -8,7 +8,12 @@
 
     <!-- fonts -->
     <link rel="stylesheet" href="fonts/IBM_Plex_Mono/stylesheet.css" />
-    <link rel="stylesheet" href="fonts/M PLUS 1/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="fonts/IBM_Plex_Sans/stylesheet.css" />
     <link rel="stylesheet" href="fonts/poppins/stylesheet.css" />
     <link
@@ -39,16 +44,18 @@
         </div>
         <div id="mainListDiv" class="main_list">
           <ul class="navlinks">
-            <li onclick="serviceItems()"><a href="#">Services <i class="fa-solid fa-chevron-down service-down"></i></a>
+            <li onclick="serviceItems()">
+              <a href="#"
+                >Services <i class="fa-solid fa-chevron-down service-down"></i
+              ></a>
               <ul id="service-items">
                 <li><a href="number-mapping.html">Number Mapping</a></li>
                 <li><a href="number-scrubbing.html">Number Scrubbing</a></li>
                 <li><a href="#">Number Monitoring</a></li>
-                <li><a href="#">Data Subscription</a></li>
+                <li><a href="data-subscription.html">Data Subscription</a></li>
                 <li><a href="#">Number API </a></li>
               </ul>
-              
-              </li>
+            </li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="api-key.html">API</a></li>
@@ -133,7 +140,7 @@
                   fill="#008F7D"
                 />
               </svg>
-              <span>(684) 555-0102</span>
+              <span>(484) 424-9683</span>
             </div>
 
             <div class="address">
@@ -155,8 +162,7 @@
         </div>
         <div>
           <p class="service-sub-para contact-sub-para">
-            Leave us a message and we'll respond <br />
-            as soon as possible!
+            Leave us a message and we'll respond as soon as possible!
           </p>
           <div></div>
           <form class="contact-form" action="">
@@ -184,7 +190,7 @@
               placeholder="Enter phone number"
             />
 
-            <label for="message">Last Name</label>
+            <label for="message">Message</label>
             <textarea
               name="text"
               rows="3"
@@ -201,8 +207,18 @@
     <footer class="footer">
       <div class="footer-menu-start">
         <div class="nav-brand">
-          <img src="img/white-logo.png" alt="" />
+          <img src="front-end/img/white-logo.png" alt="" />
           <h3 class="nav-title">TelcomData</h3>
+        </div>
+        <div class="social-link-container">
+          <a
+            href="https://www.facebook.com/TelcomDataus-One-Stop-Shop-for-US-LERG-LRN-DNC-Data-161148389027028"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/telcomdata1"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/telcomdata"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <p class="footer-para">
           Copyright © 2022 TelcomeData. <br />
@@ -250,7 +266,7 @@
                 fill="#869593"
               />
             </svg>
-
+  
             2715 Ash Dr. San Jose,<br />
             South Dakota 83475
           </li>
@@ -284,13 +300,16 @@
                 fill="#869593"
               />
             </svg>
-
+  
             support@telcomdata.com
           </li>
+          <p class="footer-para-mobile">
+            Copyright © 2022 TelcomeData. <br />
+            All rights reserved. Terms of service
+          </p>
         </ul>
       </div>
     </footer>
-
     <script src="js/jquery-3.6.1.js"></script>
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
 
