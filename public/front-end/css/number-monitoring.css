@@ -3,6 +3,7 @@
 }
 
 .rolling-table {
+  display: block;
   margin: 0 39px;
   width: inherit;
   max-width: 100%;

@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav affix">
+        <nav class="nav taffix">
       <div class="container">
         <div class="logo">
           <a href="/"
@@ -11,26 +11,30 @@
         </div>
         <div id="mainListDiv" class="main_list">
           <ul class="navlinks">
-            <li onclick="serviceItems()"><a href="#">Services <i class="fa-solid fa-chevron-down service-down"></i></a>
+            <li onclick="serviceItems()">
+              <a href="#"
+                >Services <i class="fa-solid fa-chevron-down service-down"></i
+              ></a>
               <ul id="service-items">
                 <li><a href="number-mapping.html">Number Mapping</a></li>
                 <li><a href="number-scrubbing.html">Number Scrubbing</a></li>
                 <li><a href="#">Number Monitoring</a></li>
-                <li><a href="#">Data Subscription</a></li>
+                <li><a href="data-subscription.html">Data Subscription</a></li>
                 <li><a href="#">Number API </a></li>
               </ul>
-              
-              </li>
+            </li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="api-key.html">API</a></li>
             <li><a href="contact-us.html">Contact</a></li>
             <li id="login-container">
-              <a class="login-btn" id="login-btn" href="signin.html">Log In</a>
+              <a class="login-btn topfix" id="login-btn" href="signin.html"
+                >Log In</a
+              >
             </li>
           </ul>
         </div>
-        <span class="navTrigger affix">
+        <span class="navTrigger taffix">
           <i></i>
           <i></i>
           <i></i>
@@ -203,8 +207,18 @@
     <footer class="footer">
       <div class="footer-menu-start">
         <div class="nav-brand">
-          <img src="img/white-logo.png" alt="" />
+          <img src="front-end/img/white-logo.png" alt="" />
           <h3 class="nav-title">TelcomData</h3>
+        </div>
+        <div class="social-link-container">
+          <a
+            href="https://www.facebook.com/TelcomDataus-One-Stop-Shop-for-US-LERG-LRN-DNC-Data-161148389027028"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/telcomdata1"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/telcomdata"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <p class="footer-para">
           Copyright © 2022 TelcomeData. <br />
@@ -252,9 +266,8 @@
                 fill="#869593"
               />
             </svg>
-
-            2715 Ash Dr. San Jose,<br />
-            South Dakota 83475
+  
+            3524 Silverside Road Suite 35B,<br> Wilmington, Delaware, 19810
           </li>
           <li>
             <svg
@@ -270,7 +283,7 @@
                 fill="#869593"
               />
             </svg>
-            (684) 555-0102
+            +1-484-424-9683
           </li>
           <li>
             <svg
@@ -286,15 +299,19 @@
                 fill="#869593"
               />
             </svg>
-
+  
             support@telcomdata.com
           </li>
+          <p class="footer-para-mobile">
+            Copyright © 2022 TelcomeData. <br />
+            All rights reserved. Terms of service
+          </p>
         </ul>
       </div>
     </footer>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "pricing",
 };

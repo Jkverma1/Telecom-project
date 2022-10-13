@@ -4,7 +4,7 @@
       <div class="logo">
         <a href="/"
           ><div class="nav-brand">
-            <img src="front-end/img/white-logo.png" alt="" />
+            <img src="img/white-logo.png" alt="" />
             <h3 class="nav-title">TelcomData</h3>
           </div></a
         >
@@ -16,28 +16,25 @@
               >Services <i class="fa-solid fa-chevron-down service-down"></i
             ></a>
             <ul id="service-items">
-              <li><a href="front-end/number-mapping.html">Number Mapping</a></li>
-              <li><a href="front-end/number-scrubbing.html">Number Scrubbing</a></li>
+              <li><a href="number-mapping.html">Number Mapping</a></li>
+              <li><a href="number-scrubbing.html">Number Scrubbing</a></li>
               <li><a href="#">Number Monitoring</a></li>
-              <li><a href="front-end/data-subscription.html">Data Subscription</a></li>
+              <li><a href="data-subscription.html">Data Subscription</a></li>
               <li><a href="#">Number API </a></li>
             </ul>
           </li>
-          <li><a href="front-end/pricing.html">Pricing</a></li>
-          <li><a href="front-end/about-us.html">About Us</a></li>
-          <li><a href="front-end/api-key.html">API</a></li>
-          <li><a href="front-end/contact-us.html">Contact</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="api-key.html">API</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
           <li id="login-container">
-            <a
-              class="login-btn-rest topfix"
-              id="login-btn"
-              href="front-end/signin.html"
-              >Log In</a
+            <a class="login-btn topfix" id="login-btn" onclick="logoutbtn()"
+              >Log Out</a
             >
           </li>
         </ul>
       </div>
-      <span class="navTrigger affix">
+      <span class="navTrigger taffix">
         <i></i>
         <i></i>
         <i></i>
@@ -45,38 +42,27 @@
     </div>
   </nav>
 
-  <section class="about-us-text">
-    <h1 class="about-us-head">About Us</h1>
-    <p class="about-us-para">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
-      sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-      mollit. Exercitation veniam consequat sunt nostrud amet.
-    </p>
-    <img class="about-us-img" src="front-end/img/about-us-img.png" alt="" />
-    <h1 class="about-us-head">Title Placeholder</h1>
-    <p class="about-us-para">
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
-      sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-      mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit
-      non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-      consequat duis enim velit mollit. <br /><br />
-      Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non
-      deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-      consequat duis enim velit mollit. Exercitation veniam consequat sunt
-      nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor
-      do amet sint. <br />
-      <br />
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit
-      aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-      Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non
-      deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-      consequat duis enim velit mollit. Exercitation veniam consequat sunt
-      nostrud amet.
-    </p>
+  <section class="api-key-section">
+    <svg
+      width="25"
+      height="24"
+      viewBox="0 0 25 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.87547 16.7812L9.12547 15.2192L5.10147 12.0002L9.12547 8.78123L7.87547 7.21923L2.87547 11.2192C2.75831 11.3129 2.66374 11.4317 2.59874 11.5669C2.53375 11.7021 2.5 11.8502 2.5 12.0002C2.5 12.1502 2.53375 12.2983 2.59874 12.4335C2.66374 12.5687 2.75831 12.6875 2.87547 12.7812L7.87547 16.7812ZM17.1255 7.21923L15.8755 8.78123L19.8995 12.0002L15.8755 15.2192L17.1255 16.7812L22.1255 12.7812C22.2426 12.6875 22.3372 12.5687 22.4022 12.4335C22.4672 12.2983 22.5009 12.1502 22.5009 12.0002C22.5009 11.8502 22.4672 11.7021 22.4022 11.5669C22.3372 11.4317 22.2426 11.3129 22.1255 11.2192L17.1255 7.21923ZM15.4765 3.21623L11.4765 21.2162L9.52347 20.7822L13.5235 2.78223L15.4765 3.21623Z"
+        fill="#008F7D"
+      />
+    </svg>
+    <h1 class="api-key-head">API Key</h1>
+    <div class="api-key-container">
+      <label class="api-label" for="">Your API Key</label>
+      <input class="api-key-input" type="text" value="sHmfg45mAwz" />
+      <div class="text-align-center">
+        <button class="api-refresh-btn">Refresh Key</button>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
@@ -191,7 +177,7 @@
 
 <script lang="ts">
 export default {
-  name: "about",
+  name: "api",
 };
 </script>
 

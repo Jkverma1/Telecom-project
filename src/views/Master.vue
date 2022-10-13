@@ -29,14 +29,14 @@
               <li><a href="#">Number API </a></li>
             </ul>
           </li>
-          <li><a href="/front-end/pricing.html">Pricing</a></li>
+          <li><a href="front-end/pricing.html">Pricing</a></li>
           <li>
-            <a href="/"
-              ><router-link to="/pages/about">About Us</router-link></a
-            >
+            <a><router-link to="/about">About Us</router-link></a>
           </li>
-          <li><a href="/front-end/api-key.html">API</a></li>
-          <li><a href="/front-end/contact-us.html">Contact</a></li>
+          <li>
+            <a><router-link to="/api">API</router-link></a>
+          </li>
+          <li><a href="/">Contact</a></li>
           <li id="login-container">
             <a
               class="login-btn-index"
@@ -383,6 +383,21 @@
             <div></div>
           </div>
         </div>
+        <span class="add-location-scrubbing">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.3336 5.5555H6.44468V0.666612C6.44468 0.548738 6.39786 0.435692 6.31451 0.352343C6.23116 0.268993 6.11811 0.222168 6.00024 0.222168C5.88236 0.222168 5.76932 0.268993 5.68597 0.352343C5.60262 0.435692 5.55579 0.548738 5.55579 0.666612V5.5555H0.666904C0.54903 5.5555 0.435984 5.60233 0.352634 5.68568C0.269285 5.76903 0.222459 5.88207 0.222459 5.99995C0.220266 6.05771 0.23048 6.11527 0.252413 6.16875C0.274345 6.22223 0.307487 6.27039 0.349604 6.30998C0.391722 6.34957 0.441836 6.37967 0.496571 6.39826C0.551305 6.41684 0.609387 6.42348 0.666904 6.41772H5.55579V11.3333C5.55579 11.4512 5.60262 11.5642 5.68597 11.6475C5.76932 11.7309 5.88236 11.7777 6.00024 11.7777C6.11811 11.7777 6.23116 11.7309 6.31451 11.6475C6.39786 11.5642 6.44468 11.4512 6.44468 11.3333V6.44439H11.3336C11.4514 6.44439 11.5645 6.39757 11.6478 6.31422C11.7312 6.23087 11.778 6.11782 11.778 5.99995C11.778 5.88207 11.7312 5.76903 11.6478 5.68568C11.5645 5.60233 11.4514 5.5555 11.3336 5.5555Z"
+              fill="#008F7D"
+            />
+          </svg>
+          Add location
+        </span>
         <div class="checkbox-grid2">
           <div class="checkBox">
             <input type="checkbox" />

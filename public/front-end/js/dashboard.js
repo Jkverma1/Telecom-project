@@ -105,6 +105,17 @@ function MonitoringAddManual() {
   document.querySelector(".show-container").style.display = "none";
 }
 
+function uploadButtonBack() {
+  document.querySelector(".m-s-21").style.marginTop = "none";
+  document.querySelector(".back-to-listing").style.display = "none";
+  document.querySelector(".monitoring-upload-content").style.display = "none";
+  document.querySelector(".rolling-table").style.display = "block";
+  document.querySelector(".filter-menu-container").style.visibility = "unset";
+  document.querySelector(".show-container").style.display = "grid";
+  document.querySelector(".add-manual-content").style.display = "none";
+  document.querySelector(".number-monitoring-table").style.display = "unset";
+}
+
 function subBtn1() {
   let subBtn1 = document.querySelector(".first-button");
   let subBtn2 = document.querySelector(".second-button");
@@ -162,6 +173,16 @@ function taskListingDetail() {
   document.querySelector(".number-mapping-detail-container").style.display =
     "unset";
 }
+
+function BackToMappingTaskListing(){
+  document.querySelector("#add-mapping-task-listing").style.display = "unset";
+  document.querySelector("#sub-tab-4").style.display = "unset";
+  document.querySelector(".number-mapping-detail-container").style.display =
+    "none";
+  document.querySelector("#number-mapping-result-container").style.display =
+    "none";
+}
+
 function stateDistributionPopup() {
   document.querySelector(".mapping-state-distribution-popup").style.display =
     "unset";
