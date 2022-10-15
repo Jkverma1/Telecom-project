@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .data-subscription-head {
   /* H3 | Subtitle */
 

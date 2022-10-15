@@ -1391,6 +1391,11 @@ textarea::placeholder {
 
     color: #ffffff;
   }
+
+  .footer-menu-list a {
+    text-decoration: none;
+  }
+
   .login-btn,
   .login-btn-index,
   .login-btn-rest {
@@ -1510,6 +1515,14 @@ textarea::placeholder {
   }
 }
 
+.browse-files-text {
+  margin-right: 5px;
+}
+
+.cross-container {
+  text-align: right;
+}
+
 @media screen and (max-width: 612px) {
   .footer {
     display: grid;
@@ -1544,7 +1557,7 @@ textarea::placeholder {
     display: none;
   }
   .footer-para-mobile {
-    margin-top: 8px;
+    margin-top: 32px;
     display: unset;
   }
   .banner-sub-head {

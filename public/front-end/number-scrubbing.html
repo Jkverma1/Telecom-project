@@ -26,6 +26,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="fonts/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="css/scrubbing-result.css">
     <link rel="stylesheet" href="css/dashboard.css">
   </head>
   <body>
@@ -68,6 +69,37 @@
         </span>
       </div>
     </nav>
+
+    <div class="background-overlay-popup">
+      <div id="buy-api" class="buy-api-popup">
+
+        <!-- Modal content -->
+        <div class="buy-api-popup-content">
+          <span class="close" onclick="closeApipopup()">&times;</span>
+          <h1 class="popup-head">Buy API Credit</h1>
+      
+          <div class="popup-form-container">
+            <h3 class="credit-details">Number Count <span>10000</span></h3>
+            <h3 class="credit-details">Fee <span>$0.001 USD</span></h3>
+            <h3 class="credit-details">Fee <span>$10 USD</span></h3>
+            <div class="popup-input-container">
+              <label class="popup-label" for="email-to-recieve-data">Email to receive data</label>
+              <input
+                type="text"
+                class="popup-input"
+                name="email-to-recieve-data"
+                placeholder="johndoe@email.com"
+              />
+            </div>
+            <div class="text-align-center">
+              <button class="pay-now-btn">Pay Now</button>
+            </div>
+          </div>
+          
+        </div>
+      
+      </div>
+      </div>
 
     <!-- number scrubbing -->
     <section class="number-mapping m-143">
@@ -254,7 +286,7 @@
             <div>
 
             </div>
-            <button type="button" class="upload-button">Submit</button>
+            <button type="button" class="upload-button" onclick="buyApipopup()">Submit</button>
           </div>
         </div>
       </form>
@@ -284,19 +316,37 @@
         <div class="footer-sub-menu">
           <h3 class="footer-menu-head">Services</h3>
           <ul class="footer-menu-list">
-            <li>Number Scubbing</li>
-            <li>Number Mapping</li>
+            <li>
+              <a style="color: #fff" href="front-end/number-scrubbing.html"
+                >Number Scubbing</a
+              >
+            </li>
+            <li>
+              <a style="color: #fff" href="front-end/number-mapping.html"
+                >Number Mapping</a
+              >
+            </li>
             <li>Number Monitoring</li>
-            <li>Data Subscription</li>
+            <li>
+              <a style="color: #fff" href="front-end/data-subscription.html"
+                >Data Subscription</a
+              >
+            </li>
             <li>Number API</li>
           </ul>
         </div>
         <div class="footer-sub-menu">
           <h3 class="footer-menu-head">Menu</h3>
           <ul class="footer-menu-list">
-            <li>Pricing</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li>
+              <a style="color: #fff" href="front-end/pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a style="color: #fff" href="front-end/about-us.html">About Us</a>
+            </li>
+            <li>
+              <a style="color: #fff" href="front-end/contact-us.html">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -365,6 +415,7 @@
       </div>
     </footer>
     <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/dashboard.js"></script>
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script src="js/main.js"></script>
   </body>

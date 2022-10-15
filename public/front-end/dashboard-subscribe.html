@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/IBM_Plex_Sans/stylesheet.css" />
     <link rel="stylesheet" href="fonts/poppins/stylesheet.css" />
+    <link rel="stylesheet" href="css/scrubbing-result.css">
     <link
       href="fonts/fontawesome-free/css/all.min.css"
       rel="stylesheet"
@@ -48,6 +49,25 @@
   padding: 14px 0 38px;
 }
     </style>
+
+<div class="confirm-payment-task-popup-map">
+  <span class="close-btn" onclick="closeconfirmPaymentTaskmap()">&times;</span>
+  <h1 class="logout-popup-head">Confirm payment for this task</h1>
+  <div class="api-frame confirm-payment-text-div m-32">
+    <div class="api-frame-input">
+      <label for="">Number of Records</label>
+      <label for="">1000</label>
+    </div>
+    <div class="api-frame-input m-32">
+      <label for="">Fee</label>
+      <label for="">$10.00 USD</label>
+    </div>
+  </div>
+  <div class="logout-popup-btn-container m-32">
+    <a class="cancel-btn" onclick="closeconfirmPaymentTaskmap()">Back</a>
+    <a class="logout-btn" href="#">Pay Now</a>
+  </div>
+</div>
     <div class="state-distribution-background-overlay-popup">
       <!-- fraud description -->
       <div class="fraud-description-popup">
@@ -330,6 +350,51 @@
       </div>
     </div>
     <div class="background-overlay-popup">
+      <div id="buy-api" class="buy-api-popup">
+
+        <!-- Modal content -->
+        <div class="buy-api-popup-content">
+          <span class="close" onclick="closeApipopup()">&times;</span>
+          <h1 class="popup-head">Buy API Credit</h1>
+      
+          <div class="popup-form-container">
+            <h3 class="credit-details">Number Count <span>10000</span></h3>
+            <h3 class="credit-details">Fee <span>$0.001 USD</span></h3>
+            <h3 class="credit-details">Fee <span>$10 USD</span></h3>
+            <div class="popup-input-container">
+              <label class="popup-label" for="email-to-recieve-data">Email to receive data</label>
+              <input
+                type="text"
+                class="popup-input"
+                name="email-to-recieve-data"
+                placeholder="johndoe@email.com"
+              />
+            </div>
+            <div class="text-align-center">
+              <button class="pay-now-btn">Pay Now</button>
+            </div>
+          </div>
+          
+        </div>
+      
+      </div>
+      <div class="renew-price-popup">
+        <span class="close-btn" onclick="closeRenewPrice()">&times;</span>
+        <h1 class="logout-popup-head">Renew Price</h1>
+        <div class="api-frame">
+          <div class="api-frame-input">
+            <label for="">Montly</label>
+            <label for="">$500 USD</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Yearly</label>
+            <label for="">$5000 USD</label>
+          </div>
+        </div>
+        <div class="logout-popup-btn-container">
+          <a class="logout-btn" href="#">Pay Now</a>
+        </div>
+      </div>
       <div class="buy-api-popup">
         <span class="close-btn" onclick="closeApipopup()">&times;</span>
         <h1 class="logout-popup-head">Buy API Credit</h1>
@@ -1829,7 +1894,8 @@
             <div>
 
             </div>
-            <button type="button" class="upload-button">Submit</button>
+            <button type="button" class="upload-button" onclick="confirmPaymentTaskmap()">Submit</button>
+            
           </div>
         </div>
       </form>
@@ -2286,19 +2352,37 @@
         <div class="footer-sub-menu">
           <h3 class="footer-menu-head">Services</h3>
           <ul class="footer-menu-list">
-            <li>Number Scubbing</li>
-            <li>Number Mapping</li>
+            <li>
+              <a style="color: #fff" href="front-end/number-scrubbing.html"
+                >Number Scubbing</a
+              >
+            </li>
+            <li>
+              <a style="color: #fff" href="front-end/number-mapping.html"
+                >Number Mapping</a
+              >
+            </li>
             <li>Number Monitoring</li>
-            <li>Data Subscription</li>
+            <li>
+              <a style="color: #fff" href="front-end/data-subscription.html"
+                >Data Subscription</a
+              >
+            </li>
             <li>Number API</li>
           </ul>
         </div>
         <div class="footer-sub-menu">
           <h3 class="footer-menu-head">Menu</h3>
           <ul class="footer-menu-list">
-            <li>Pricing</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li>
+              <a style="color: #fff" href="front-end/pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a style="color: #fff" href="front-end/about-us.html">About Us</a>
+            </li>
+            <li>
+              <a style="color: #fff" href="front-end/contact-us.html">Contact</a>
+            </li>
           </ul>
         </div>
       </div>

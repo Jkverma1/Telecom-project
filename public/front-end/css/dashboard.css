@@ -508,6 +508,7 @@ section.active {
 .extend-date-popup,
 .renew-price-popup,
 .confirm-payment-task-popup,
+.confirm-payment-task-popup-map,
 .Number-detail-popup,
 .Number-scrubbing-task-listing-popup,
 .mapping-state-distribution-popup,
@@ -860,6 +861,10 @@ section.active {
   color: #011312;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .data-subscription-table,
 .number-monitoring-table {
   width: 1136px;
@@ -1002,5 +1007,21 @@ and also iPads specifically.
   td,
   th {
     width: 172.5px;
+  }
+}
+
+.mapping-result-fixer {
+  left: 132px;
+}
+
+@media screen and (max-width: 820px) {
+  .mapping-result-fixer {
+    left: 39px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mapping-result-fixer {
+    left: 15px;
   }
 }

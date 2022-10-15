@@ -6,6 +6,10 @@
   margin-top: 7px;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .back-dashboard-btn {
   text-decoration: none;
   /* Button text */
@@ -118,7 +122,7 @@
 .summary-btn-container {
   margin-top: 25px;
   display: grid;
-  grid-template-columns: 221px 221px 221px 221px;
+  grid-template-columns: 250px 250px 250px 250px;
   column-gap: 24px;
   row-gap: 16px;
 }
@@ -130,6 +134,8 @@
   font-size: 16px;
   line-height: 21px;
   /* identical to box height */
+  white-space: nowrap;
+  width: 250px;
   padding: 12px 24px;
   text-align: center;
   background-color: transparent;
@@ -141,7 +147,6 @@
 
 @media screen and (max-width: 1000px) {
   .number-mapping-result-container {
-    display: grid;
     justify-content: center;
   }
 }
@@ -154,7 +159,6 @@
     margin-bottom: 139px;
   }
   .number-mapping-result-container {
-    display: grid;
     justify-content: center;
   }
   .summary-btn-container {
@@ -176,7 +180,6 @@
     width: 290px;
   }
   .number-mapping-result-container {
-    display: grid;
     justify-content: center;
   }
   .summary-back-dashboard-btn {

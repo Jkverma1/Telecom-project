@@ -7,6 +7,10 @@
   border-radius: 0px;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .number-scrubing-task-listing th {
   font-family: "IBM Plex Mono";
   font-style: normal;
@@ -298,7 +302,7 @@
     grid-template-columns: auto;
   }
   .scrubbing-task-record-head-1 {
-    grid-template-columns: 24px 184px 68px auto;
+    grid-template-columns: 24px 190px 68px auto;
   }
   .output-download-details {
     display: flex;

@@ -20,6 +20,15 @@
   color: #3e4b4b;
 }
 
+.ui.input {
+  font-size: 1em;
+  width: 100%;
+}
+
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .m-16 {
   margin-top: 16px;
 }
@@ -46,8 +55,15 @@
   .api-usage-head-container {
     grid-template-columns: auto auto;
   }
+
+  .api-usage-head-container {
+    margin-top: 32px;
+  }
 }
 @media screen and (max-width: 707px) {
+  .api-usage-head-container {
+    margin: 24px;
+  }
   .main-table {
     width: 600px;
     position: relative;

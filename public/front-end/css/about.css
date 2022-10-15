@@ -19,6 +19,10 @@
   color: #011312;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .about-us-para {
   font-family: "M PLUS 1";
   font-style: normal;

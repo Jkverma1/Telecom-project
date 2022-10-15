@@ -73,6 +73,10 @@
   background: #008f7d;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .cancel-btn {
   font-family: "IBM Plex Mono";
   text-decoration: none;

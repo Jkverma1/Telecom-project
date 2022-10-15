@@ -58,6 +58,16 @@ function closeconfirmPaymentTask() {
   document.querySelector(".confirm-payment-task-popup").style.display = "none";
 }
 
+function confirmPaymentTaskmap() {
+  document.querySelector(".confirm-payment-task-popup-map").style.display =
+    "unset";
+}
+
+function closeconfirmPaymentTaskmap() {
+  document.querySelector(".confirm-payment-task-popup-map").style.display =
+    "none";
+}
+
 function numberMonitoringPopup() {
   document.querySelector(".Number-detail-popup").style.display = "unset";
   document.querySelector(
@@ -93,6 +103,7 @@ function monitoringUploadBtn() {
   document.querySelector(".monitoring-upload-content").style.display = "unset";
   document.querySelector(".rolling-table").style.display = "none";
   document.querySelector(".filter-menu-container").style.visibility = "hidden";
+  document.querySelector(".filter-menu-container").style.height = "0px";
   document.querySelector(".show-container").style.display = "none";
 }
 
@@ -102,6 +113,7 @@ function MonitoringAddManual() {
   document.querySelector(".add-manual-content").style.display = "unset";
   document.querySelector(".number-monitoring-table").style.display = "none";
   document.querySelector(".filter-menu-container").style.visibility = "hidden";
+  document.querySelector(".filter-menu-container").style.height = "0px";
   document.querySelector(".show-container").style.display = "none";
 }
 
@@ -111,6 +123,7 @@ function uploadButtonBack() {
   document.querySelector(".monitoring-upload-content").style.display = "none";
   document.querySelector(".rolling-table").style.display = "block";
   document.querySelector(".filter-menu-container").style.visibility = "unset";
+  document.querySelector(".filter-menu-container").style.height = "unset";
   document.querySelector(".show-container").style.display = "grid";
   document.querySelector(".add-manual-content").style.display = "none";
   document.querySelector(".number-monitoring-table").style.display = "unset";
@@ -164,7 +177,10 @@ function taskListingResult() {
   document.querySelector("#add-mapping-task-listing").style.display = "none";
   document.querySelector("#sub-tab-4").style.display = "none";
   document.querySelector("#number-mapping-result-container").style.display =
-    "unset";
+    "grid";
+  document.querySelector(".content").style.left = "0";
+  document.querySelector(".content").style.transform = "translate(0,0)";
+  document.querySelector(".Dashboard").style.padding = "0 39px";
 }
 
 function taskListingDetail() {
@@ -174,13 +190,16 @@ function taskListingDetail() {
     "unset";
 }
 
-function BackToMappingTaskListing(){
+function BackToMappingTaskListing() {
   document.querySelector("#add-mapping-task-listing").style.display = "unset";
   document.querySelector("#sub-tab-4").style.display = "unset";
   document.querySelector(".number-mapping-detail-container").style.display =
     "none";
   document.querySelector("#number-mapping-result-container").style.display =
     "none";
+  document.querySelector(".content").style.left = "50%";
+  document.querySelector(".content").style.transform = "translate(-50%,0)";
+  document.querySelector(".Dashboard").style.padding = "0";
 }
 
 function stateDistributionPopup() {

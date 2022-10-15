@@ -252,6 +252,10 @@ input[type="password"]::-ms-reveal {
   margin-bottom: 32px;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .remember-forgot label {
   font-family: "M PLUS 1";
   font-style: normal;

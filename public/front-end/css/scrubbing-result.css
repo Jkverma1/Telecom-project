@@ -7,26 +7,27 @@
 }
 
 .Service-head {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 input[type="checkbox"]::not(:checked) {
   background-color: #00443b33 !important;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 /* The Modal (background) */
 .buy-api-popup {
-  display: block;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  background: #ffffff;
+  box-shadow: 0px 12px 24px -8px rgba(72, 68, 68, 0.2);
 }
 
 .buy-api-popup-content,
@@ -43,13 +44,14 @@ input[type="checkbox"]::not(:checked) {
 
 /* The Close Button */
 .close {
-  margin: 8px;
-  background: #e0e0e0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 25px;
   color: #979191;
-  float: right;
-  font-size: 20.5px;
-  padding: 0px 5.37px;
-  font-weight: bold;
+  padding: 2.7px 6px;
+  cursor: pointer;
+  background: #e0e0e0;
 }
 
 .close:hover,
@@ -64,7 +66,7 @@ input[type="checkbox"]::not(:checked) {
   padding-top: 16px;
   font-family: "M PLUS 1";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 32px;
   line-height: 40px;
   /* identical to box height, or 125% */
@@ -197,9 +199,6 @@ input[type="checkbox"]::not(:checked) {
   .popup-input,
   .result-popup-input {
     width: 434px;
-  }
-  .buy-api-popup {
-    padding-top: 190px;
   }
 }
 

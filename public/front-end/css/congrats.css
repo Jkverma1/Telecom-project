@@ -89,6 +89,7 @@
 }
 
 .back-to-service-btn {
+  background-color: transparent;
   border: 1px solid #3e4b4b;
   font-family: "IBM Plex Mono";
   font-style: normal;
@@ -118,6 +119,10 @@
   display: grid;
   grid-template-columns: auto 370px;
   justify-content: space-around;
+}
+
+.footer-menu-list a {
+  text-decoration: none;
 }
 
 .contact-info-details {
@@ -188,6 +193,7 @@
     text-align: center;
     order: unset;
     width: inherit;
+    margin: 0 15px;
   }
 }
 

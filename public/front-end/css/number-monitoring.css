@@ -11,6 +11,10 @@
   margin-bottom: 16px;
 }
 
+.footer-menu-list a {
+  text-decoration: none;
+}
+
 .rolling-table::-webkit-scrollbar {
   width: 10px;
   height: 4px;
