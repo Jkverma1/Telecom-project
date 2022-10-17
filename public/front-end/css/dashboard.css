@@ -676,7 +676,7 @@ section.active {
 .keyword-box-down-icon {
   float: right;
   margin-top: 8px;
-  font-size: 7px;
+  font-size: 10px;
   margin-right: 12px;
 }
 
@@ -752,7 +752,6 @@ section.active {
     position: absolute;
     left: 22.59px;
   }
-
 }
 
 @media screen and (max-width: 601px) {
