@@ -37,6 +37,8 @@
 
 .number-mapping-result-title {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
   justify-content: space-between;
   width: 469px;
   font-family: "IBM Plex Mono";
@@ -105,6 +107,7 @@
 
 .summary-content {
   font-family: "IBM Plex Mono";
+  text-align: left;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

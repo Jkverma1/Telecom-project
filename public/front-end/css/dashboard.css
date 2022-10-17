@@ -253,6 +253,13 @@ section.active {
     text-align: center;
     padding: 0 15px;
   }
+  .mobile-summary-content {
+    width: 175px;
+  }
+  .summar-dow-btn {
+    padding: 8px 24px;
+  }
+
   .main-table {
     width: 100%;
   }
@@ -697,7 +704,7 @@ section.active {
 }
 
 .cross-container {
-  text-align: left;
+  text-align: right;
   margin-top: 16px;
 }
 
@@ -737,6 +744,13 @@ section.active {
   }
   .logout-popup-btn-container {
     margin: 16px;
+  }
+  .back-t-list {
+    display: none;
+  }
+  .back-to-listing {
+    position: absolute;
+    left: 22.59px;
   }
 }
 

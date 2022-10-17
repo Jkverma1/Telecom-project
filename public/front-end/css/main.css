@@ -1130,6 +1130,7 @@ textarea::placeholder {
 }
 
 .footer-para-mobile {
+  position: relative;
   margin-top: 8px;
   display: none;
 }
@@ -1557,7 +1558,8 @@ textarea::placeholder {
     display: none;
   }
   .footer-para-mobile {
-    margin-top: 32px;
+    position: relative;
+    top: 32px;
     display: unset;
   }
   .banner-sub-head {

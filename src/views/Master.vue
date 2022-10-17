@@ -36,7 +36,7 @@
           <li>
             <a><router-link to="/api">API</router-link></a>
           </li>
-          <li><a href="/">Contact</a></li>
+          <li><a href="front-end/contact-us.html">Contact</a></li>
           <li id="login-container">
             <a
               class="login-btn-index"
@@ -791,7 +791,7 @@
   </footer>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "Master",
 };
