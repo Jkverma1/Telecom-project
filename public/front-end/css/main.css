@@ -1151,6 +1151,14 @@ textarea::placeholder {
   margin-top: 204px;
 }
 
+.mt-104 {
+  margin-top: 104px;
+}
+
+.text-white {
+  color: #fff;
+}
+
 .social-link-container i {
   height: 18px;
   width: 18px;
@@ -1432,6 +1440,9 @@ textarea::placeholder {
   .contact-container-index {
     margin-top: 96px;
   }
+  .mt-104 {
+    margin-top: 45px;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -1533,6 +1544,9 @@ textarea::placeholder {
   }
   .contact-container-index {
     margin-top: 46px;
+  }
+  .mt-104 {
+    margin-top: 22px;
   }
   .banner-head {
     font-family: "M PLUS 1";

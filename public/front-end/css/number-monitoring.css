@@ -326,25 +326,25 @@
     grid-template-columns: auto;
   }
   .Number-detail-background-overlay-popup {
-    height: 1700px;
+    height: 1600px;
   }
   .Number-scrubbing-background-overlay-popup {
-    height: 1500px;
+    height: 1300px;
   }
   .state-distribution-background-overlay-popup {
-    height: 1200px;
+    height: 900px;
   }
 }
 
 @media screen and (max-width: 675px) {
   .Number-detail-background-overlay-popup {
-    height: 2100px;
-  }
-  .Number-scrubbing-background-overlay-popup {
     height: 1700px;
   }
+  .Number-scrubbing-background-overlay-popup {
+    height: 1300px;
+  }
   .state-distribution-background-overlay-popup {
-    height: 1620px;
+    height: 1100px;
   }
   .monitoring-main-top-menu {
     padding: 0 15px;
@@ -376,9 +376,7 @@
     vertical-align: middle;
     align-items: center;
     margin: 24px 32px 0px;
-}
-
-
+  }
 }
 
 .data-subscription-table,
