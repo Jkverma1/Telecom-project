@@ -1,4 +1,7 @@
 <template>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
   <nav class="nav">
     <div class="container">
       <div class="logo">
